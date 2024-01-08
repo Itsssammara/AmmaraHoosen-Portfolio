@@ -4,3 +4,7 @@
     <p>image and info goes here</p>
   </div>
 </template>
+
+<script>
+
+</script>
