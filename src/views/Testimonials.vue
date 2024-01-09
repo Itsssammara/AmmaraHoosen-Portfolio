@@ -1,19 +1,34 @@
 <template>
     <div class="testimonials">
-        <h1>6 reviews go here</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>v</h1>
-        <h1>v</h1>
-        <h1>v</h1>
-        <h1>v</h1>
-        <h1>v</h1>
+       <div class="cards">
+        <div v-for="testimonials in $store.state.testimonial" :key="testimonials.id" class="testimonial-card">
+            <img src="testimonials.image" class="testimonial-imag" alt="testimage">
+            <div class="testinfo">
+                <h2 class="test-name">{{ testimonials.name }}</h2>
+                <p class="test-text">{{ testimonials.testimonial }}</p>
+            </div>
+       </div>
+       </div>
     </div>
 </template>
+
+<script>
+export default{
+    // data() {
+    //     return {
+    //         testimonialData: testimonialData,
+    //     };
+    // },
+    computed:{
+        fetchTestimonial(){
+            this.$store.dispatch('fecthTestimonials')
+        }
+    },
+    mounted(){
+        this.fetchTestimonials
+    }
+};
+</script>
 
 <style scoped>
 .testimonials{

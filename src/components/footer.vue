@@ -1,7 +1,10 @@
 <template>
-  <footer>
-  <p>Made with <span>&hearts;</span> by <a>Ammara Hoosen</a> </p>
-</footer>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Ammara Hoosen. All rights reserved.</p>
+      <Footer />
+    </div>
+  </footer>
 </template>
 
 <script>
@@ -10,6 +13,18 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 </style>
+
+
+

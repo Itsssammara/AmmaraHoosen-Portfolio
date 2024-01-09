@@ -8,6 +8,10 @@
 export default {
 name: "spinner"
 }
+// data()
+// return{
+
+// }
 </script>
 
 <style>

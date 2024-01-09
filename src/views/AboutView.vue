@@ -18,6 +18,17 @@
 
 <script>
 
+export default {
+  computed:{
+    fetchAbout(){
+      this.$store.dispatch("fetchAbout")
+    }
+  },
+  mounted(){
+    this.fetchAbout
+  }
+}
+
 </script>
 
 <style scoped>
