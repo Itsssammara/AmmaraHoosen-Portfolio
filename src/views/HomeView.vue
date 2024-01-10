@@ -12,7 +12,7 @@
   text-align: center;
   background: fixed;
   width: 100%;
-  background-color: aqua;
+  background-color: #b45757;
   background-size: 1400px; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
  }

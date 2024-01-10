@@ -9,6 +9,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
 .resume{
+ background-color: #b45757;
  text-align: center;
  background: fixed;
  width: auto;

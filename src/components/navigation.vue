@@ -19,7 +19,7 @@
     text-align: center;
   }
   .navbar a {
-    color: #fff;
+    color: rgb(81, 206, 210);
     text-decoration: none;
     margin: 0 5px;
     padding: 5px 10px;

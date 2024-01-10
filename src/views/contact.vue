@@ -14,6 +14,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
 .contact{
+background-color: #b45757;
 width: auto;
 background-size: cover; /* Adjust as needed */
 background-position: center; /* Adjust as needed */

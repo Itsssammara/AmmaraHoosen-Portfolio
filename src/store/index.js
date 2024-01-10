@@ -117,7 +117,7 @@ export default createStore({
             return response.json();
           })
           .then(data => {
-          //  console.log(data[0])
+          //  console.log(data.Testimonials)
           commit('setTestimonials', data.Testimonials);
           // console.log("Image URL:", data);
           })

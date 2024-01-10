@@ -9,15 +9,11 @@
       <div class="about-details">
         <h1>About Me</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
-          Vestibulum euismod lacus ac bibendum sollicitudin. Sed et sem nec massa
-          volutpat accumsan. Proin vestibulum elit vitae ante pharetra, eu fermentum
-          risus congue.
+          My name is Ammara and I'm 19 years old. I pride myself on my ability to take initiative and always being eager to learn new things.
+          One of my greatest strengths lies in my ability to work both independently and as part of a team.
         </p>
         <p>
-          Sed at felis a justo sodales fermentum. Integer sit amet enim eget felis
-          sodales cursus. Duis commodo tincidunt quam, nec dapibus ex hendrerit sit
-          amet.
+          From a young age I have always loved art  and technology, which is  why I chose web development.
         </p>
       </div>
     </div>
@@ -44,6 +40,7 @@ export default {
 <style scoped>
 .about {
   text-align: center;
+  background-color: #b45757;
 }
 
 .about-content {
@@ -55,6 +52,8 @@ export default {
 .about-image img {
   border-radius: 50%;
   margin-right: 20px; /* Adjust as needed */
+  margin-top: 20%;
+  
 }
 
 h1 {
@@ -62,6 +61,7 @@ h1 {
 }
 
 .about-details {
+  margin-top: 4%;
   max-width: 600px; /* Adjust as needed */
   text-align: left;
 }
