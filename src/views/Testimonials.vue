@@ -43,8 +43,8 @@ export default{
   background: fixed;
   width: auto;
   background-image: url('https://drive.google.com/uc?id=1jFEVA_nynEQXcJ9Wd-NVt8Rk1rAlv_bF');
-  background-size: cover; /* Adjust as needed */
-  background-position: center; /* Adjust as needed */
+  background-size: cover; 
+  background-position: center; 
   background-color: #904545;
 }
 
@@ -52,7 +52,7 @@ export default{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 30px; /* Adjust as needed */
+  margin: 30px; 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 154px;
@@ -60,7 +60,7 @@ export default{
 }
 
 .testimonial-card {
-  margin: 15px; /* Adjust as needed */
+  margin: 15px; 
   background: #fff;
   padding: 15px;
   border-radius: 8px;
@@ -68,14 +68,14 @@ export default{
 }
 .testimonial-card:hover {
   box-shadow: 0 8px 16px rgba(10, 10, 10, 0.2);
-  transform: scale(1.09); /* Increase size on hover */
+  transform: scale(1.10); 
 }
 
 .testimonial-image {
-  width: 100%; /* Adjust as needed */
-  max-width: 200px; /* Adjust as needed */
+  width: 100%;
+  max-width: 200px; 
   border-radius: 50%;
-  margin-bottom: 10px; /* Adjust as needed */
+  margin-bottom: 10px; 
 }
 
 .test-info {
@@ -84,7 +84,7 @@ export default{
 
 .test-name {
   font-size: 1.5em;
-  margin-bottom: 5px; /* Adjust as needed */
+  margin-bottom: 5px; 
 }
 
 .test-text {
