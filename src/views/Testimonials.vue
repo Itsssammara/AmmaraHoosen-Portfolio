@@ -1,5 +1,6 @@
 <template>
     <div class="testimonials">
+     <div ><h1>Testimonials </h1></div>
        <div class="cards">
             <div v-for="testimonials in $store.state.testimonial" :key="testimonials.id" class="testimonial-card">
                 <img :src="testimonials.image" class="testimonial-image" alt="testimage">
@@ -31,14 +32,10 @@ export default{
 </script>
 
 <style scoped>
-.testimonials{
- text-align: center;
- background: fixed;
- width: auto;
- background-image: url('https://drive.google.com/uc?id=1jFEVA_nynEQXcJ9Wd-NVt8Rk1rAlv_bF');
- background-size: cover; /* Adjust as needed */
- background-position: center; /* Adjust as needed */
-}
+ h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
 .testimonials {
   text-align: center;
   background: fixed;
