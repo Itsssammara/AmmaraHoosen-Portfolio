@@ -1,17 +1,7 @@
 <template>
     <div class="contact">
         <h1>location and contact form</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>v</h1>
-        <h1>v</h1>
-        <h1>v</h1>
-        <h1>v</h1>
-        <h1>v</h1>
+
     </div>
 </template>
 

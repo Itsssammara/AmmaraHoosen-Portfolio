@@ -1,17 +1,7 @@
 <template>
     <div class="resume">
         <h1>work/edu</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>v</h1>
-        <h1>v</h1>
-        <h1>v</h1>
-        <h1>v</h1>
-        <h1>v</h1>
+
     </div>
 </template>
 <style scoped>

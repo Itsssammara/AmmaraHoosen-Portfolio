@@ -5,9 +5,9 @@ export default createStore({
   state: {
     about: [],
     home: [],
-    education: [],
-    job:[],
-    testimonial:[]
+    projects: [],
+    resume:[],
+    testimonials:[]
   },
   mutations: {
     setAbout(state, about) {
@@ -16,14 +16,14 @@ export default createStore({
     setHome(state, homedata) {
       state.home = homedata
     },
-    seteducation(state,data){
-      state.education = data
+    setprojects(state,data){
+      state.projects = data
     },
-    setJob(state,data){
-      state.job = data
+    setResume(state,data){
+      state.resume = data
     },
-    setTestimonial(state,data){
-      state.testimonial = data
+    setTestimonials(state,data){
+      state.testimonials = data
     }
   },
   actions: {
@@ -59,7 +59,7 @@ export default createStore({
         commit('setHome',home.Home[0])
       })
     },
-    fetcheducation({ commit }) {
+    fetchProjects({ commit }) {
       try {
         fetch(hostedData)
           .then(response => {
@@ -70,7 +70,7 @@ export default createStore({
           })
           .then(data => {
           //  console.log(data[0])
-            commit('seteducation', data.education[0]);
+            commit('setProjects', data.projects[0]);
           })
           .catch(error => {
             console.error('Error fetching data:', error);
@@ -83,7 +83,7 @@ export default createStore({
         // commit('setError', 'An unexpected error occurred');
       }
     },
-    fetchJob({ commit }) {
+    fetchResume({ commit }) {
       try {
         fetch(hostedData)
           .then(response => {
@@ -94,7 +94,7 @@ export default createStore({
           })
           .then(data => {
           //  console.log(data[0])
-            commit('setJob', data.jobs[0]);
+            commit('setResume', data.resume[0]);
           })
           .catch(error => {
             console.error('Error fetching data:', error);
@@ -107,7 +107,7 @@ export default createStore({
         // commit('setError', 'An unexpected error occurred');
       }
     },
-    fetchTestimonial({ commit }) {
+    fetchTestimonials({ commit }) {
       try {
         fetch(hostedData)
           .then(response => {
@@ -118,7 +118,7 @@ export default createStore({
           })
           .then(data => {
           //  console.log(data[0])
-          commit('setTestimonial', data.testimonial);
+          commit('setTestimonials', data.Testimonials);
           // console.log("Image URL:", data);
           })
           .catch(error => {

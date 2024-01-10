@@ -2,14 +2,13 @@
   <footer class="footer">
     <div class="container">
       <p>&copy; 2024 Ammara Hoosen. All rights reserved.</p>
-      <Footer />
     </div>
   </footer>
 </template>
 
 <script>
 export default {
-    name: "footer"
+  name: "Footer"
 }
 </script>
 
@@ -25,6 +24,3 @@ export default {
   margin: 0 auto;
 }
 </style>
-
-
-

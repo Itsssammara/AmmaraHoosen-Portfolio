@@ -1,17 +1,7 @@
 <template>
     <div class="projects">
         <h1>6 Projects go here</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>f</h1>
-        <h1>v</h1>
-        <h1>v</h1>
-        <h1>v</h1>
-        <h1>v</h1>
-        <h1>v</h1>
+
     </div>
 </template>
 <style scoped>
