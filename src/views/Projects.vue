@@ -1,6 +1,6 @@
 <template>
     <div class="projects">
-        <div><h1>Projects</h1></div>
+        <div><h1>My Projects</h1></div>
         <div class="container">
             <div v-for="project in $store.state.projects" :key="project.id" class="card-body">
                 <img :src="project.url" class="content-img" alt="projectcard">

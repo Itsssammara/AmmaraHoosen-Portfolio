@@ -1,6 +1,6 @@
 <template>
     <div class="resume">
-        <h1>Work/Education</h1>
+        <h1>Education</h1>
         <footers/>
     </div>
 </template>
