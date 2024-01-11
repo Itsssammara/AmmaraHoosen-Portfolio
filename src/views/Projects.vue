@@ -88,7 +88,7 @@ export default {
 @media (min-width:1024px){
   .card-body{
     margin: 25px 15px;
-    width: 10%;
+    width: 30%;
   }
 }
 .content-img{

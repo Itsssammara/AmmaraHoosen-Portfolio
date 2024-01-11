@@ -1,16 +1,18 @@
 <template>
-  <div class="about">
-    <div class="about-content">
-      <h1>About Me</h1>      
-      <div class="about-image">
-        <img src="https://cdn-thumbs.imagevenue.com/cc/d7/6a/ME17GC7I_t.jpg" alt="Profile Image">
+  <div id="app">
+      <div class="about">
+        <div class="about-content">
+          <h1>About Me</h1>      
+          <div class="about-image">
+            <img src="https://cdn-thumbs.imagevenue.com/cc/d7/6a/ME17GC7I_t.jpg" alt="Profile Image">
+          </div>
+          <div class="about-details">
+            <p>My name is Ammara and I'm 19 years old. I pride myself on my ability to take initiative and always being eager to learn new things. One of my greatest strengths lies in my ability to work both independently and as part of a team.</p>
+            <p>From a young age, I have always loved art and technology, which is why I chose UI / UX design.</p>
+          </div>
+        </div>
       </div>
-      <div class="about-details">
-        <p>My name is Ammara and I'm 19 years old. I pride myself on my ability to take initiative and always being eager to learn new things. One of my greatest strengths lies in my ability to work both independently and as part of a team.</p>
-        <p>From a young age, I have always loved art and technology, which is why I chose UI / UX design.</p>
-      </div>
-    </div>
-    <footers/>
+      <footers />
   </div>
 </template>
 
@@ -39,6 +41,7 @@ export default {
   text-align: center;
   background-color: #b45757;
   padding: 20px; 
+  height: 200px;
 }
 
 .about-content {
@@ -68,5 +71,17 @@ h1 {
 
 p {
   margin-bottom: 15px;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure at least the height of the viewport */
+}
+
+.about {
+  text-align: center;
+  background-color: #b45757;
+  padding: 20px; 
+  flex-grow: 1; /* Make the content area grow to fill the available space */
 }
 </style>
