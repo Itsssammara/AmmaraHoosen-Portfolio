@@ -1,46 +1,163 @@
 <template>
     <div class="projects">
-     <div ><h1>Projects </h1></div>
-       <div class="cards">
-        
-            <div v-for="project in $store.state.projects" :key="project.id" class="project-card">
-                <img :src="project.url" class="project-image" alt="projectcard">
-                <div class="projectinfo">
+        <div><h1>Projects</h1></div>
+        <div class="container">
+            <div v-for="project in $store.state.projects" :key="project.id" class="card-body">
+                <img :src="project.url" class="content-img" alt="projectcard">
+                <div class="card-text">
                     <h2 class="project-name">{{ project.name }}</h2>
                     <p class="project-text">{{ project.description }}</p>
                 </div>
             </div>
-       </div>
+        </div>
+        <footers/>
     </div>
 </template>
 
 <script>
-export default{
-    // data() {
-    //     return {
-    //         projectData: projectData,
-    //     };
-    // },
-    computed:{
-        fetchProjects(){
-            this.$store.dispatch('fetchProjects')
+import footers from '@/components/footer.vue'
+export default {
+    components:{
+      footers
+    },
+    computed: {
+        fetchProjects() {
+            this.$store.dispatch('fetchProjects');
         }
     },
-    mounted(){
-        this.fetchProjects
+    mounted() {
+        this.fetchProjects 
     }
 };
 </script>
+
 <style scoped>
  h1{
+  margin-top: 1px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
 .projects{
- background-color: #b45757;
+ color: #fff;
+ padding: 20px;
  text-align: center;
  background: fixed;
  width: auto;
  background-size: cover; 
  background-position: center; 
+ background-color: #904545;
+}
+.card-text {
+  font-style: italic;
+  color: #555;
+}
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0
+}
+.container{
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto 75px;
+  width: 85%;
+}
+.card-body{
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.2);
+  font-family: 'Lora', serif;
+  margin: 25px 0;
+  min-height: 515px;
+  overflow: hidden;
+  width: 100%;
+}
+@media (min-width:768px){
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card-body{
+    margin: 25px 10px;
+    width: 45%;
+  }
+}
+@media (min-width:1024px){
+  .card-body{
+    margin: 25px 15px;
+    width: 10%;
+  }
+}
+.content-img{
+  border-bottom: 4px solid #ffffff;
+  height: 200px;
+  overflow: hidden;
+}
+.card-body img{
+  height: auto;
+  object-position: center center;
+  width: 100%;
+}
+.card-body .card-text{
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+  min-height: 315px;
+}
+
+@media (min-width:768px){
+  .card-body .card-text{
+    padding-bottom: 25px;
+  }
+}
+@media (min-width:1024px){
+  .card-body .card-text{
+    margin-top: 25px;
+    min-height: 250px;
+    padding-bottom: 0;
+  }
+}
+.card-text p.tag{
+  font-family: 'Lato', sans-serif;
+  font-size: .75rem;
+  color: #898989;
+  letter-spacing: 3px;
+  margin-top: 5.5vh;
+  text-transform: uppercase;
+}
+@media (min-width:1024px){
+  .card-text p.tag{
+    margin-top: 3.5vh;
+  }
+}
+.card-text h2{
+  font-size: 1.75rem;
+  margin-top: 25px;
+}
+.card-text p.text{
+  font-size: .95rem;
+  margin: 20px auto;
+  text-align: center;
+  width: 85%;
+}
+.card-text a.read-more{
+  border: 2px solid #F8864F;
+  border-radius: 25px;
+  color: #F8864F;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-size: .85rem;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 7.5px 25px;
+  transition: all .5s ease;
+}
+.card-text a.read-more:hover{
+  background-color: #F8864F;
+  color: #FFFFFF;
+  transform: scale(1.15)
 }
 </style>

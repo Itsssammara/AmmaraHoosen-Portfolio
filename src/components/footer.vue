@@ -16,8 +16,8 @@ export default {
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 20px 0;
   text-align: center;
+  padding: 10px;
 }
 .container {
   max-width: 1200px;

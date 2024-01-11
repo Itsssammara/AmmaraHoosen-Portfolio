@@ -16,7 +16,7 @@ export default createStore({
     setHome(state, homedata) {
       state.home = homedata
     },
-    setprojects(state,data){
+    setProjects(state,data){
       state.projects = data
     },
     setResume(state,data){
@@ -69,8 +69,8 @@ export default createStore({
             return response.json();
           })
           .then(data => {
-          //  console.log(data[0])
-            commit('setProjects', data.projects[0]);
+           console.log(data.Projects)
+            commit('setProjects', data.Projects);
           })
           .catch(error => {
             console.error('Error fetching data:', error);

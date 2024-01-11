@@ -2,6 +2,7 @@
     <div class="testimonials">
      <div ><h1>Testimonials </h1></div>
        <div class="cards">
+        <!-- vif -->
             <div v-for="testimonial in $store.state.testimonials" :key="testimonial.id" class="testimonial-card">
                 <img :src="testimonial.url" class="testimonial-image" alt="testimage">
                 <div class="testinfo">
@@ -9,17 +10,26 @@
                     <p class="test-text">{{ testimonial.message }}</p>
                 </div>
             </div>
+            <!-- div -->
        </div>
+       <!-- else -->
+       <footers/>
     </div>
 </template>
 
 <script>
+import footers from '@/components/footer.vue'
+import spinners from '@/components/spinner.vue'
 export default{
     // data() {
     //     return {
     //         testimonialData: testimonialData,
     //     };
     // },
+    components:{
+      footers,
+      spinners
+    },
     computed:{
         fetchTestimonials(){
             this.$store.dispatch('fetchTestimonials')
@@ -29,6 +39,16 @@ export default{
         this.fetchTestimonials
     }
 };
+
+/*
+div use v-if chuck!== '' 
+disply
+div
+
+div v-else
+spinner
+div
+*/
 </script>
 
 <style scoped>
@@ -38,6 +58,7 @@ export default{
  }
 
 .testimonials {
+  padding: 20px;
   color: #fff;
   text-align: center;
   background: fixed;
@@ -83,6 +104,7 @@ export default{
 }
 
 .test-name {
+  color: #555;
   font-size: 1.5em;
   margin-bottom: 5px; 
 }
