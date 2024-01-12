@@ -3,7 +3,7 @@
     <div class="contact-form">
       <h2>Lets get in touch!</h2>
       <p>If you have any questions or inquiries, please feel free to contact us using the form below.</p>
-      <form action="https://formspree.io/your-email-here" method="POST" class="contact-form">
+      <form action="https://formspree.io/f/mqkraege" target="_blank" class="contact-form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <label for="email">Email:</label>
@@ -14,12 +14,12 @@
       </form>
     </div>
     <div class="contact-details">
-      <!-- Your contact details go here -->
       <div>
         <h2>Contact Details</h2>
-        <p>Email: example@example.com</p>
-        <p>Phone: +1 (123) 456-7890</p>
+        <p>Email: hoosenammara@gmail.com</p>
+        <p>Phone: 074 524 8576</p>
         <!-- Add more contact details as needed -->
+        <img src="https://i.postimg.cc/sgv8P3nM/image-480.png" alt="">
       </div>
     </div>
   </div>
@@ -27,11 +27,12 @@
 
   
   <style scoped>
-  .contact-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
+.contact-container {
+  background-image: url('https://i.postimg.cc/Mp4z8PcF/image-480.png');
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
   
   .contact-form,
   .contact-details {
@@ -41,15 +42,18 @@
   .contact-form {
     /* Add styling for the contact form section */
     background-color: #f8f9fa;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
+    margin-right: 20px;
   }
   
   .contact-details {
     /* Add styling for the contact details section */
     background-color: #fff;
-    padding: 20px;
+    padding: 11px;
     border-radius: 8px;
+    height: 70vh;
+    margin-top: 20px;
   }
   .contact-form {
             margin-top: 20px;

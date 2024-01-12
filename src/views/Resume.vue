@@ -16,6 +16,7 @@ export default {
 <style scoped>
  h1{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
  }
 .resume{
  padding: 20px;
@@ -24,5 +25,6 @@ export default {
  width: auto;
  background-size: cover; 
  background-position: center; 
+ background-color: #b45757;
 }
 </style>

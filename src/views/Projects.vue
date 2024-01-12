@@ -44,7 +44,7 @@ export default {
  width: auto;
  background-size: cover; 
  background-position: center; 
- background-color: #904545;
+ background-color: #b45757;
 }
 .card-text {
   font-style: italic;
