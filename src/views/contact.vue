@@ -15,17 +15,16 @@
       </form>
     </div>
     <div class="contact-details">
-      <div>
+      <div><br>
         <h2>Contact Details</h2>
         <p><i class="bi bi-envelope"></i>hoosenammara@gmail.com</p>
         <p><i class="bi bi-telephone"></i>074 524 8576</p>
-        <!-- Add more contact details as needed -->
-        <img src="https://i.ibb.co/bgVMZQx/image-480.png" alt="map">
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/ammara-hoosen-364913288" target="_blank"><i class="bi bi-linkedin"></i></a>
           <a href="https://github.com/Itsssammara" target="_blank"><i class="bi bi-github"></i></a>
           <a href="https://www.instagram.com/marie_paints_?utm_source=qr&igsh=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="bi bi-instagram"></i></a>
-        </div>
+        </div><br>
+        <img src="https://i.ibb.co/bgVMZQx/image-480.png" alt="map">
       </div>
     </div>
   </div>
