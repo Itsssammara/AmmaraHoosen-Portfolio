@@ -66,7 +66,7 @@ div
   background-image: url('https://drive.google.com/uc?id=1jFEVA_nynEQXcJ9Wd-NVt8Rk1rAlv_bF');
   background-size: cover; 
   background-position: center; 
-  background-color: #904545;
+  background-color: #b45757;
 }
 
 .cards {
