@@ -158,7 +158,7 @@ h1 {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 2.05;
   }
 }
 
