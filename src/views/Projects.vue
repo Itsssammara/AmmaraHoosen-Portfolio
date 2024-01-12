@@ -1,163 +1,167 @@
 <template>
-    <div class="projects">
-        <div><h1>My Projects</h1></div>
-        <div class="container">
-            <div v-for="project in $store.state.projects" :key="project.id" class="card-body">
-                <img :src="project.url" class="content-img" alt="projectcard">
-                <div class="card-text">
-                    <h2 class="project-name">{{ project.name }}</h2>
-                    <p class="project-text">{{ project.description }}</p>
-                </div>
-            </div>
-        </div>
-        <footers/>
+  <div class="projects">
+    <div>
+      <h1>My Projects</h1>
     </div>
+    <div class="container">
+      <div v-for="project in $store.state.projects" :key="project.id" class="card-body">
+        <img :src="project.url" class="content-img" alt="projectcard">
+        <div class="card-text">
+          <h2 class="project-name">{{ project.name }}</h2>
+          <p class="project-text">{{ project.description }}</p>
+          <div class="project-icons">
+            <a :href="project.github" target="_blank"><i class="bi bi-github"></i></a>
+            <a :href="project.netlify" target="_blank"><i class="bi bi-arrow-up-right-square-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footers />
+  </div>
 </template>
 
 <script>
-import footers from '@/components/footer.vue'
+import footers from "@/components/footer.vue";
 export default {
-    components:{
-      footers
+  components: {
+    footers,
+  },
+  computed: {
+    fetchProjects() {
+      this.$store.dispatch("fetchProjects");
     },
-    computed: {
-        fetchProjects() {
-            this.$store.dispatch('fetchProjects');
-        }
-    },
-    mounted() {
-        this.fetchProjects 
-    }
+  },
+  mounted() {
+    this.fetchProjects;
+  },
 };
 </script>
 
 <style scoped>
- h1{
+h1 {
   margin-top: 1px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- }
-.projects{
- color: #fff;
- padding: 20px;
- text-align: center;
- background: fixed;
- width: auto;
- background-size: cover; 
- background-position: center; 
- background-color: #b45757;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+.projects {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  background: fixed;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  background-color: #b45757;
+  animation: fadeInLeft 1s ease-in-out; 
+}
+
 .card-text {
   font-style: italic;
   color: #555;
 }
-@import url('https://fonts.googleapis.com/css?family=Lora');
-@import url('https://fonts.googleapis.com/css?family=Lato');
 
-*{
+@import url("https://fonts.googleapis.com/css?family=Lora");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+* {
   box-sizing: border-box;
   margin: 0;
-  padding:0
+  padding: 0;
 }
-.container{
+
+.container {
   display: flex;
-    align-items: center;
-    flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   min-height: 100vh;
   margin: 0 auto 75px;
   width: 85%;
 }
-.card-body{
-  background-color: #FFFFFF;
-  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.2);
-  font-family: 'Lora', serif;
+
+.card-body {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Lora", serif;
   margin: 25px 0;
   min-height: 515px;
   overflow: hidden;
   width: 100%;
+  border-radius: 8px;
 }
-@media (min-width:768px){
-  .container{
+
+@media (min-width: 768px) {
+  .container {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .card-body{
+  .card-body {
     margin: 25px 10px;
     width: 45%;
   }
 }
-@media (min-width:1024px){
-  .card-body{
+
+@media (min-width: 1024px) {
+  .card-body {
     margin: 25px 15px;
     width: 30%;
   }
 }
-.content-img{
+
+.content-img {
   border-bottom: 4px solid #ffffff;
   height: 200px;
   overflow: hidden;
 }
-.card-body img{
+
+.card-body img {
   height: auto;
   object-position: center center;
   width: 100%;
 }
-.card-body .card-text{
+
+.card-body .card-text {
   display: flex;
-    align-items: center;
-    flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   min-height: 315px;
 }
 
-@media (min-width:768px){
-  .card-body .card-text{
+@media (min-width: 768px) {
+  .card-body .card-text {
     padding-bottom: 25px;
   }
 }
-@media (min-width:1024px){
-  .card-body .card-text{
+
+@media (min-width: 1024px) {
+  .card-body .card-text {
     margin-top: 25px;
     min-height: 250px;
     padding-bottom: 0;
   }
 }
-.card-text p.tag{
-  font-family: 'Lato', sans-serif;
-  font-size: .75rem;
-  color: #898989;
-  letter-spacing: 3px;
-  margin-top: 5.5vh;
-  text-transform: uppercase;
+
+.project-icons {
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-end;
+  margin-left: 160px;
 }
-@media (min-width:1024px){
-  .card-text p.tag{
-    margin-top: 3.5vh;
+
+.project-icons a {
+  margin-left: 20px;
+  font-size: 24px; /* Adjust icon size */
+  color: black; /* Set icon color to black */
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
-.card-text h2{
-  font-size: 1.75rem;
-  margin-top: 25px;
-}
-.card-text p.text{
-  font-size: .95rem;
-  margin: 20px auto;
-  text-align: center;
-  width: 85%;
-}
-.card-text a.read-more{
-  border: 2px solid #F8864F;
-  border-radius: 25px;
-  color: #F8864F;
-  cursor: pointer;
-  font-family: 'Lato', sans-serif;
-  font-size: .85rem;
-  font-weight: bold;
-  margin-top: 15px;
-  padding: 7.5px 25px;
-  transition: all .5s ease;
-}
-.card-text a.read-more:hover{
-  background-color: #F8864F;
-  color: #FFFFFF;
-  transform: scale(1.15)
-}
+
+
 </style>

@@ -1,9 +1,10 @@
 <template>
   <div class="home">
-    <h1 class="slide-in">Welcome to my Portfolio</h1>
     <div class="image">
-      <img src="https://i.postimg.cc/Nj1SMdLM/propic-360.png" alt="Portfolio Image" class="w-25">
+      <img src="https://i.postimg.cc/Nj1SMdLM/propic-360.png" class="profile-image">
     </div>
+    <h1 class="slide-in">Hi, my name is Ammara Hoosen</h1>
+    <h2 class="slide-in">ASPIRING UI/UX DEVELOPER</h2>
   </div>
 </template>
 
@@ -12,47 +13,53 @@
 
 <style scoped>
 * {
-  
-  text-align: center;
-  background: fixed;
-  width: 100%;
-  background-color: #b45757;
-  background-size: 1400px; /* Adjust as needed */
-  background-position: center; 
-  background-image: url('https://i.postimg.cc/Mp4z8PcF/image-480.png');
-  background-size: cover
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .home {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
+  background-color: #b45757;
+  background-image: url('https://i.ibb.co/DKkMz21/bg-gif.gif');
+  background-size: cover;
+  background-position: center;
 }
 
-h1 {
-  color: #fff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  opacity: 0; /* Initially set the opacity to 0 */
+h1, h2 {
+  color: #b45757;
+  font-family: fantasy;
+  opacity: 0;
+  margin-bottom: 20px;
 }
 
 .slide-in {
-  animation: slideIn 1s forwards; /* 1s duration, forwards to keep the final state */
+  animation: slideIn 1s forwards;
 }
 
 @keyframes slideIn {
   from {
-    transform: translateX(-100%); /* Start from the left */
+    transform: translateY(50px); /* Adjust this value to control the starting position */
     opacity: 0;
   }
   to {
-    transform: translateX(0); /* Move to the original position */
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
-.home-image {
+.image {
+  margin-top: 20px;
+}
+
+.profile-image {
+  width: 200px; /* Adjust as needed */
+  height: auto;
   border-radius: 50%;
-  margin-right: 20px;
-  margin-top: 3%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 </style>

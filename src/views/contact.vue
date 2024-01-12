@@ -1,4 +1,5 @@
 <template>
+    <div>
   <div class="contact-container">
     <div class="contact-form">
       <h2>Lets get in touch!</h2>
@@ -14,16 +15,35 @@
       </form>
     </div>
     <div class="contact-details">
-      <div>
+      <div><br>
         <h2>Contact Details</h2>
-        <p>Email: hoosenammara@gmail.com</p>
-        <p>Phone: 074 524 8576</p>
-        <!-- Add more contact details as needed -->
-        <img src="https://i.postimg.cc/sgv8P3nM/image-480.png" alt="">
+        <p><i class="bi bi-envelope"></i>hoosenammara@gmail.com</p>
+        <p><i class="bi bi-telephone"></i>074 524 8576</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/ammara-hoosen-364913288" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/Itsssammara" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.instagram.com/marie_paints_?utm_source=qr&igsh=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div><br>
+        <img src="https://i.ibb.co/bgVMZQx/image-480.png" alt="map">
       </div>
     </div>
   </div>
+  <footers/>
+</div>
 </template>
+
+
+<script>
+import footers from '@/components/footer.vue'
+import spinners from '@/components/spinner.vue'
+export default{
+    components:{
+      footers,
+      spinners
+    }
+};
+
+</script>
 
   
   <style scoped>
@@ -82,5 +102,27 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        .contact-details i {
+          margin-right: 10px;
+        }
+        .social-icons {
+          margin-top: 10px;
+        }
+
+        .social-icons a {
+         margin-right: 10px; /* Adjust the spacing between icons */
+         color: #333; /* Set the icon color */
+        }
+        @media only screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: row; /* Switch to a row layout on larger screens */
+  }
+
+  .contact-form,
+  .contact-details {
+    margin-bottom: 0; /* Remove the margin between sections in the row layout */
+  }
+}
+        
   </style>
   
