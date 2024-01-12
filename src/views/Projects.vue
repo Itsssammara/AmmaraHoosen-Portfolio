@@ -4,7 +4,6 @@
       <h1>My Projects</h1>
     </div>
     <div class="container">
-      <!-- vif -->
       <div v-for="project in $store.state.projects" :key="project.id" class="card-body">
         <img :src="project.url" class="content-img" alt="projectcard">
         <div class="card-text">
@@ -16,9 +15,7 @@
           </div>
         </div>
       </div>
-      <!-- div -->
     </div>
-    <!-- else -->
     <footers />
   </div>
 </template>
@@ -55,6 +52,7 @@ h1 {
   background-size: cover;
   background-position: center;
   background-color: #b45757;
+  animation: fadeInLeft 1s ease-in-out; 
 }
 
 .card-text {
@@ -88,6 +86,7 @@ h1 {
   min-height: 515px;
   overflow: hidden;
   width: 100%;
+  border-radius: 8px;
 }
 
 @media (min-width: 768px) {
@@ -153,25 +152,16 @@ h1 {
   font-size: 24px; /* Adjust icon size */
   color: black; /* Set icon color to black */
 }
-@keyframes fadeIn {
+@keyframes fadeInLeft {
   from {
     opacity: 0;
+    transform: translateX(-20px);
   }
   to {
     opacity: 1;
+    transform: translateX(0);
   }
 }
 
-.projects {
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  background: fixed;
-  width: auto;
-  background-size: cover;
-  background-position: center;
-  background-color: #b45757;
-  animation: fadeIn 1s ease-in-out; /* Apply the fade-in animation */
-}
 
 </style>

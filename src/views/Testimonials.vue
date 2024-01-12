@@ -53,18 +53,18 @@ div
   margin-top: 1px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
-
-.testimonials {
+ .testimonials {
   padding: 20px;
   color: #fff;
   text-align: center;
   background: fixed;
   width: auto;
-  background-image: url('https://drive.google.com/uc?id=1jFEVA_nynEQXcJ9Wd-NVt8Rk1rAlv_bF');
-  background-size: cover; 
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   background-color: #b45757;
+  animation: fadeInLeft 1s ease-in-out; /* Apply the fade-in animation */
 }
+
 
 .cards {
   display: flex;
@@ -110,4 +110,17 @@ div
   font-style: italic;
   color: #555;
 }
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
 </style>

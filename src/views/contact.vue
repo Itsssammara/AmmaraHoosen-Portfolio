@@ -113,6 +113,16 @@ export default{
          margin-right: 10px; /* Adjust the spacing between icons */
          color: #333; /* Set the icon color */
         }
+        @media only screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: row; /* Switch to a row layout on larger screens */
+  }
+
+  .contact-form,
+  .contact-details {
+    margin-bottom: 0; /* Remove the margin between sections in the row layout */
+  }
+}
         
   </style>
   
