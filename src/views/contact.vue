@@ -19,7 +19,7 @@
         <p>Email: hoosenammara@gmail.com</p>
         <p>Phone: 074 524 8576</p>
         <!-- Add more contact details as needed -->
-        <img src="https://i.postimg.cc/sgv8P3nM/image-480.png" alt="">
+        <img src="https://i.ibb.co/bgVMZQx/image-480.png" alt="">
       </div>
     </div>
   </div>
