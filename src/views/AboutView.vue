@@ -8,7 +8,7 @@
           </div>
           <div class="about-details">
             <p>My name is Ammara and I'm 19 years old. I pride myself on my ability to take initiative and always being eager to learn new things. One of my greatest strengths lies in my ability to work both independently and as part of a team.</p>
-            <p>From a young age, I have always loved art and technology, which is why I chose UI / UX design.</p>
+            <p>From a young age, I have always loved art and technology, which is why I chose Web Development and UI / UX design.</p>
           </div>
         </div>
       </div>
@@ -42,6 +42,7 @@ export default {
   background-color: #b45757;
   padding: 20px; 
   height: 200px;
+  animation: fadeInLeft 1s ease-in-out;
 }
 
 .about-content {
@@ -83,5 +84,15 @@ p {
   background-color: #b45757;
   padding: 20px; 
   flex-grow: 1; /* Make the content area grow to fill the available space */
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 2;
+    transform: translateX(0);
+  }
 }
 </style>

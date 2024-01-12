@@ -93,8 +93,8 @@ export default createStore({
             return response.json();
           })
           .then(data => {
-          //  console.log(data[0])
-            commit('setResume', data.resume[0]);
+          console.log(data.Resume)
+            commit('setResume', data.Resume);
           })
           .catch(error => {
             console.error('Error fetching data:', error);
