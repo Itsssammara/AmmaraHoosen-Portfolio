@@ -2,7 +2,6 @@
     <div class="testimonials">
      <div ><h1>Testimonials </h1></div>
        <div class="cards">
-        <!-- vif -->
             <div v-for="testimonial in $store.state.testimonials" :key="testimonial.id" class="testimonial-card">
                 <img :src="testimonial.url" class="testimonial-image" alt="testimage">
                 <div class="testinfo">
@@ -10,9 +9,7 @@
                     <p class="test-text">{{ testimonial.message }}</p>
                 </div>
             </div>
-            <!-- div -->
        </div>
-       <!-- else -->
        <footers/>
     </div>
 </template>
