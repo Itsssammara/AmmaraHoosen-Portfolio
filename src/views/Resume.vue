@@ -4,8 +4,7 @@
         <h1>Education</h1>
       </div>
       <div class="cards">
-        <div v-for="resume in $store.state.resumes" :key="resume.id" class="resume-card">
-          <img :src="resume.url" class="resume-image" alt="resumeimg">
+        <div v-for="resume of $store.state.resume" v-bind:key="resume" class="resume-card">
           <div class="resumeinfo">
             <h2 class="resumename">{{ resume.schoolname }}</h2>
             <p class="resume-text">{{ resume.year }}</p>
@@ -13,6 +12,42 @@
           </div>
         </div>
       </div>
+      <h1>Skills</h1>
+      <div class="skills-container">
+    <!-- Skill Card 1 -->
+    <div class="skill-card">
+      <h2 class="skill-name">HTML</h2>
+      <p class="skill-level">Proficient</p>
+      <img src="https://i.ibb.co/jMtxNJS/image-360.png" alt="HTML Image" class="skill-image">
+    </div>
+
+    <!-- Skill Card 2 -->
+    <div class="skill-card">
+      <h2 class="skill-name">CSS</h2>
+      <p class="skill-level">Proficient</p>
+      <img src="https://i.ibb.co/q75Pd8J/image-360.png" alt="CSS Image" class="skill-image">
+    </div>
+
+    <!-- Skill Card 3 -->
+    <div class="skill-card">
+      <h2 class="skill-name">Bootsrap</h2>
+      <p class="skill-level">Proficient</p>
+      <img src="https://i.ibb.co/Y817gCk/image-360.png" alt="CSS Image" class="skill-image">
+    </div>
+
+    <div class="skill-card">
+      <h2 class="skill-name">Javascript</h2>
+      <p class="skill-level">Proficient</p>
+      <img src="https://i.ibb.co/Q8cWZ3q/image-360.png" alt="CSS Image" class="skill-image">
+    </div>
+
+    <div class="skill-card">
+      <h2 class="skill-name">Vue.js</h2>
+      <p class="skill-level">Proficient</p>
+      <img src="https://i.ibb.co/80gT044/image-360.png" alt="CSS Image" class="skill-image">
+    </div>
+
+  </div>
       <footers/>
     </div>
   </template>
