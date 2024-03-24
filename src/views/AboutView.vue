@@ -39,7 +39,7 @@ export default {
 <style scoped>
 .about {
   text-align: center;
-  background-color: #b45757;
+  background-color: #f0f0f0;
   padding: 20px; 
   height: 200px;
   animation: fadeInLeft 1s ease-in-out;
@@ -81,7 +81,7 @@ p {
 
 .about {
   text-align: center;
-  background-color: #b45757;
+  background-color: #f0f0f0;
   padding: 20px; 
   flex-grow: 1; /* Make the content area grow to fill the available space */
 }

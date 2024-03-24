@@ -19,6 +19,8 @@
       <h2 class="skill-name">HTML</h2>
       <p class="skill-level">Proficient</p>
       <img src="https://i.ibb.co/jMtxNJS/image-360.png" alt="HTML Image" class="skill-image">
+      <img src="https://i.ibb.co/XyKXt9L/sintonlgo.png" alt="sintonlgo" border="0">
+<img src="https://i.ibb.co/rt8cvcn/LCLOGO.jpg" alt="LCLOGO" border="0">
     </div>
 
     <!-- Skill Card 2 -->

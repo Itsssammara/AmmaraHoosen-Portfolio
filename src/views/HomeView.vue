@@ -1,21 +1,36 @@
 <template>
   <div class="home">
     <div class="image">
-      <img src="https://i.postimg.cc/Nj1SMdLM/propic-360.png" class="profile-image">
+      <img src="https://i.postimg.cc/zD0F42zS/pleat1.png" class="profile-image" alt="Profile Image">
     </div>
-    <h1 class="slide-in">Hi, my name is Ammara Hoosen</h1>
-    <h2 class="slide-in">ASPIRING UI/UX DEVELOPER</h2>
+    <div class="text-container">
+      <h1 class="fade-in" id="first-sentence">Hi, I'm <span class="highlight">Ammara Hoosen</span></h1>
+      <h2 class="fade-in" id="second-sentence" style="animation-delay: 1.1s;">Aspiring <span class="highlight">UI/UX Developer</span></h2>
+    </div>
   </div>
 </template>
 
 <script>
+export default {
+  mounted() {
+    // Get the elements
+    const firstSentence = document.getElementById('first-sentence');
+    const secondSentence = document.getElementById('second-sentence');
+    
+    // Apply fade-in animation to the first sentence
+    firstSentence.classList.add('fade-in');
+
+    // Apply fade-in animation to the second sentence after a delay
+    setTimeout(() => {
+      secondSentence.classList.add('fade-in');
+    }, 1000); // Delay in milliseconds (1s = 1000ms)
+  }
+}
 </script>
 
 <style scoped>
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .home {
@@ -24,42 +39,41 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #b45757;
-  background-image: url('https://i.ibb.co/DKkMz21/bg-gif.gif');
-  background-size: cover;
-  background-position: center;
-}
-
-h1, h2 {
-  color: #b45757;
-  font-family: fantasy;
-  opacity: 0;
-  margin-bottom: 20px;
-}
-
-.slide-in {
-  animation: slideIn 1s forwards;
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateY(50px); /* Adjust this value to control the starting position */
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  background-color: #f0f0f0;
 }
 
 .image {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .profile-image {
-  width: 200px; /* Adjust as needed */
+  width: 200px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 60%;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.text-container {
+  text-align: center;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.highlight {
+  color: #b45757; /* Highlight color */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>

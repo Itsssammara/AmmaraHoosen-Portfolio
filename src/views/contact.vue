@@ -1,21 +1,20 @@
 <template>
-    <div>
   <div class="contact-container">
     <div class="contact-form">
       <h2>Lets get in touch!</h2>
       <p>If you have any questions or inquiries, please feel free to contact us using the form below.</p>
-      <form action="https://formspree.io/f/mqkraege" target="_blank" class="contact-form">
+      <form @submit.prevent="submitForm" class="form">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input v-model="formData.name" type="text" id="name" name="name" required>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input v-model="formData.email" type="email" id="email" name="email" required>
         <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea v-model="formData.message" id="message" name="message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
     <div class="contact-details">
-      <div><br>
+      <div>
         <h2>Contact Details</h2>
         <p><i class="bi bi-envelope"></i>hoosenammara@gmail.com</p>
         <p><i class="bi bi-telephone"></i>074 524 8576</p>
@@ -23,26 +22,34 @@
           <a href="https://www.linkedin.com/in/ammara-hoosen-364913288" target="_blank"><i class="bi bi-linkedin"></i></a>
           <a href="https://github.com/Itsssammara" target="_blank"><i class="bi bi-github"></i></a>
           <a href="https://www.instagram.com/marie_paints_?utm_source=qr&igsh=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="bi bi-instagram"></i></a>
-        </div><br>
+        </div>
+      </div>
+      <div>
         <img src="https://i.ibb.co/bgVMZQx/image-480.png" alt="map">
       </div>
     </div>
   </div>
-  <footers/>
-</div>
 </template>
 
-
 <script>
-import footers from '@/components/footer.vue'
-import spinners from '@/components/spinner.vue'
-export default{
-    components:{
-      footers,
-      spinners
+export default {
+  data() {
+    return {
+      formData: {
+        name: '',
+        email: '',
+        message: ''
+      }
+    };
+  },
+  methods: {
+    submitForm() {
+      // Implement form submission logic here
+      console.log('Form Submitted:', this.formData);
+      // You can add your form submission logic here, like sending data to an API
     }
+  }
 };
-
 </script>
 
   
