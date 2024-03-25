@@ -43,6 +43,7 @@ export default {
   padding: 20px; 
   height: 200px;
   animation: fadeInLeft 1s ease-in-out;
+  background-image: url('https://i.postimg.cc/sxxwmG6y/Tropical-Leaf-Wandbild-f-r-das-Dschungel-Feeling-zu-Hause.jpg');
 }
 
 .about-content {

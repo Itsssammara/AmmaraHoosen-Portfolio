@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="image">
-      <img src="https://i.postimg.cc/zD0F42zS/pleat1.png" class="profile-image" alt="Profile Image">
+      <img src="https://cdn-thumbs.imagevenue.com/cc/d7/6a/ME17GC7I_t.jpg" class="profile-image" alt="Profile Image">
     </div>
     <div class="text-container">
       <h1 class="fade-in" id="first-sentence">Hi, I'm <span class="highlight">Ammara Hoosen</span></h1>
@@ -40,6 +40,7 @@ export default {
   justify-content: center;
   height: 100vh;
   background-color: #f0f0f0;
+  background-image: url('https://i.postimg.cc/05Zp2Ntd/6b887ed046d516542ab7e3534adde481.jpg');
 }
 
 .image {
