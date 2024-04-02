@@ -76,16 +76,14 @@ export default {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #fff;
  }
-.resume{
- padding: 20px;
- text-align: center;
- background: fixed;
- color: #fff;
- width: auto;
- background-size: cover; 
- background-position: center; 
- background-image: url('https://i.postimg.cc/sxxwmG6y/Tropical-Leaf-Wandbild-f-r-das-Dschungel-Feeling-zu-Hause.jpg');
- animation: fadeInLeft 1s ease-in-out;
+.resume {
+  padding: 20px;
+  text-align: center;
+  height: 150vh;
+  background-repeat: no-repeat;
+  background-color: #f0f0f0;
+  background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
+  background-size: cover; 
 }
 
 .cards {

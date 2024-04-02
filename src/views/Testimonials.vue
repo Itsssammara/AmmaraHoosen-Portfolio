@@ -59,9 +59,10 @@ div
   text-align: center;
   background: fixed;
   width: auto;
-  background-size: cover;
+  /* background-size: cover; */
   background-position: center;
-  background-image: url('https://i.postimg.cc/sxxwmG6y/Tropical-Leaf-Wandbild-f-r-das-Dschungel-Feeling-zu-Hause.jpg');
+  height: 100dvh;
+  background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
   animation: fadeInLeft 1s ease-in-out; /* Apply the fade-in animation */
 }
 

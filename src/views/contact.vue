@@ -55,7 +55,7 @@ export default {
   
   <style scoped>
 .contact-container {
-  background-image: url('https://i.postimg.cc/sxxwmG6y/Tropical-Leaf-Wandbild-f-r-das-Dschungel-Feeling-zu-Hause.jpg');
+  background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
   display: flex;
   justify-content: space-between;
   padding: 40px;
