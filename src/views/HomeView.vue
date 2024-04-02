@@ -10,8 +10,9 @@
     </div> -->
     <div class="text-container">
       <h1 class="fade-in slide-from-left" id="first-sentence">Hi, I'm <span class="highlight">Ammara  Hoosen</span></h1>
-      <h2 class="fade-in slide-from-left" id="second-sentence" style="animation-delay: 1.1s;">Aspiring <span class="highlight">UI/UX Developer</span></h2>
-    </div>
+      <h2 class="fade-in slide-from-right" id="second-sentence" style="animation-delay: 1.1s;">Aspiring <span class="highlight">UI/UX Developer</span></h2>
+    </div><br>
+    <a class="animated-btn animate_animated animate__zoomIn" href="path/to/your_cv.pdf" download>Download CV</a>
   </div>
 </template>
 
@@ -19,6 +20,14 @@
 <script>
 export default {
   mounted() {
+    // Get the button element
+    const downloadButton = document.querySelector('.animated-btn');
+
+    // Show the button after 3 seconds
+    setTimeout(() => {
+      downloadButton.classList.remove('zoomIn');
+    }, 3000); // Delay in milliseconds (3s = 3000ms)
+    
     // Get the elements
     const firstSentence = document.getElementById('first-sentence');
     const secondSentence = document.getElementById('second-sentence');
@@ -74,16 +83,16 @@ export default {
 #first-sentence {
   font-size: 60px; /* Increase font size */
   font-family: 'Arial', sans-serif; /* Change to a nicer font */
-  color: #d5dce4; /* Change color */
+  color: #47c76e;  /* Change color */
 }
 
 #second-sentence {
   font-size: 50px;
-  color: #d5dce4; /* Default color for the second sentence */
+  color: #47c76e;  /* Default color for the second sentence */
 }
 
 .highlight {
-  color: #47c76e; 
+  color: #f0f0f0;
   font-family: Black Ops One;
 }
 
@@ -99,7 +108,7 @@ export default {
 }
 
 .slide-from-right {
-  animation: slideRight 1s ease-in-out forwards;
+  animation: slideRight 2.3s ease-in-out forwards;
   opacity: 0;
 }
 
@@ -127,6 +136,47 @@ export default {
     opacity: 1;
   }
 }
+.animated-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #fff;
+        background-image: linear-gradient(to right, #FF6B6B, #556270);
+        animation: gradientAnimation 5s infinite alternate;
+        animation: zoomInAnimation 0.6s forwards;
+        transition: all 0.3s ease;
+        text-decoration: none; /* Remove underline */
+    }
+
+    /* CSS Animation for gradient */
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+     /* Animation for zoom in */
+     @keyframes zoomInAnimation {
+        from {
+            transform: scale(0);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+      }
+
+    /* Hover effect */
+    .animated-btn:hover {
+        transform: scale(1.1);
+    }
 </style>
 
 

@@ -41,8 +41,8 @@ export default {
 .about {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   height: 100vh;
   background-repeat: no-repeat;
   background-color: #f0f0f0;
