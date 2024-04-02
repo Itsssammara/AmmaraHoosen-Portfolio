@@ -61,7 +61,7 @@ div
   width: auto;
   /* background-size: cover; */
   background-position: center;
-  height: 100dvh;
+  height: 212dvh;
   background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
   animation: fadeInLeft 1s ease-in-out; /* Apply the fade-in animation */
 }
@@ -83,10 +83,12 @@ div
   background: #fff;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(18, 18, 18);
+  transition: box-shadow 0.3s ease;
 }
+
 .testimonial-card:hover {
-  box-shadow: 0 8px 16px rgba(10, 10, 10, 0.2);
+  box-shadow: 0 8px 16px rgba(255, 185, 185, 0.527);
   transform: scale(1.10); 
 }
 
