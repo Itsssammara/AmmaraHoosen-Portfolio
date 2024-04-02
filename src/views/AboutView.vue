@@ -64,8 +64,8 @@ export default {
 }
 
 h1 {
-  color: #fff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #f0f0f0;
+  font-family: Black Ops One;
 }
 
 .about-details {

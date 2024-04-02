@@ -29,10 +29,17 @@
       </div>
     </div>
   </div>
+  <footers/>
 </template>
 
 <script>
+import footers from '@/components/footer.vue'
+import spinners from '@/components/spinner.vue'
 export default {
+  components: {
+    footers,
+    spinners
+  },
   data() {
     return {
       formData: {

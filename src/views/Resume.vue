@@ -73,8 +73,8 @@ export default {
 
 <style scoped>
  h1{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #fff;
+  color: #f0f0f0;
+  font-family: Black Ops One;
  }
 .resume {
   padding: 20px;

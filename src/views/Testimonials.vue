@@ -51,7 +51,8 @@ div
 <style scoped>
  h1{
   margin-top: 1px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #f0f0f0;
+  font-family: Black Ops One;
  }
  .testimonials {
   padding: 20px;

@@ -40,7 +40,8 @@ export default {
 <style scoped>
 h1 {
   margin-top: 1px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #f0f0f0;
+  font-family: Black Ops One;
 }
 
 .projects {
@@ -51,7 +52,7 @@ h1 {
   width: auto;
   background-size: cover;
   background-position: center;
-  height: 100dvh;
+  height: 200dvh;
   background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
   animation: fadeInLeft 1s ease-in-out; 
 }

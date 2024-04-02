@@ -81,14 +81,14 @@ export default {
   animation: fadeIn 3.5s forwards;
 }
 #first-sentence {
-  font-size: 60px; /* Increase font size */
-  font-family: 'Arial', sans-serif; /* Change to a nicer font */
-  color: #47c76e;  /* Change color */
+  font-size: 60px;
+  font-family: 'Arial', sans-serif; 
+  color: #47c76e;  
 }
 
 #second-sentence {
   font-size: 50px;
-  color: #47c76e;  /* Default color for the second sentence */
+  color: #47c76e;  
 }
 
 .highlight {
