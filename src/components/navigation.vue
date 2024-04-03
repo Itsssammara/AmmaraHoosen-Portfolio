@@ -18,13 +18,13 @@
               <router-link :to="{name:'About'}" class="nav-link">About</router-link>
             </li>
             <li class="nav-item">
-              <router-link :to="{name:'Resume'}" class="nav-link">Resume</router-link>
+              <router-link :to="{name:'Resume'}" class="nav-link">Education</router-link>
             </li>
             <li class="nav-item">
               <router-link :to="{name:'Projects'}" class="nav-link">Projects</router-link>
             </li>
             <li class="nav-item">
-              <router-link :to="{name:'Testimonials'}" class="nav-link">Testimonials</router-link>
+              <router-link :to="{name:'Testimonials'}" class="nav-link">Reviews</router-link>
             </li>
             <li class="nav-item">
               <router-link :to="{name:'Contact'}" class="nav-link">Contact</router-link>

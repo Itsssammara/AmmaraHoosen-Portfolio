@@ -1,6 +1,6 @@
 <template>
     <div class="testimonials">
-     <div ><h1>Testimonials </h1></div>
+     <div ><h1>Peer Reviews </h1></div>
        <div class="cards">
             <div v-for="testimonial in $store.state.testimonials" :key="testimonial.id" class="testimonial-card">
                 <img :src="testimonial.url" class="testimonial-image" alt="testimage">

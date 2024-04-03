@@ -1,28 +1,26 @@
 <template>
-<div class="contact-container">
-  <div class="container">
-    <h1>Get In Touch</h1>
-    <form @submit.prevent="submitForm" method="post">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit">Submit</button>
-      </div>
-    </form>
-  </div>
-</div>
-
-    <!-- <div class="contact-details">
+  <div class="contact-container">
+    <div class="container">
+      <h1>Get In Touch</h1>
+      <form @submit.prevent="submitForm" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="contact-details">
       <div>
         <h2>Contact Details</h2>
         <p><i class="bi bi-envelope"></i>hoosenammara@gmail.com</p>
@@ -33,11 +31,8 @@
           <a href="https://www.instagram.com/marie_paints_?utm_source=qr&igsh=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="bi bi-instagram"></i></a>
         </div>
       </div>
-      <div>
-        <img src="https://i.ibb.co/bgVMZQx/image-480.png" alt="map">
-      </div>
-    </div> -->
-  <footers/>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -69,6 +64,26 @@ export default {
 
   
   <style scoped>
+   .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start */
+    padding: 40px;
+  }
+
+  .container {
+    flex: 1; /* Take up remaining space */
+    margin-right: 20px; /* Provide some spacing between form and details */
+  }
+
+  .contact-details {
+    width: 30%; /* Adjust width as needed */
+    background-color: #fff;
+    padding: 11px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
 .contact-container {
   background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
   background-size: cover;
