@@ -1,19 +1,28 @@
 <template>
-  <div class="contact-container">
-    <div class="contact-form">
-      <h2>Lets get in touch!</h2>
-      <p>If you have any questions or inquiries, please feel free to contact us using the form below.</p>
-      <form @submit.prevent="submitForm" class="form">
+<div class="contact-container">
+  <div class="container">
+    <h1>Get In Touch</h1>
+    <form @submit.prevent="submitForm" method="post">
+      <div class="form-group">
         <label for="name">Name:</label>
-        <input v-model="formData.name" type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
         <label for="email">Email:</label>
-        <input v-model="formData.email" type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
         <label for="message">Message:</label>
-        <textarea v-model="formData.message" id="message" name="message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-    <div class="contact-details">
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+    <!-- <div class="contact-details">
       <div>
         <h2>Contact Details</h2>
         <p><i class="bi bi-envelope"></i>hoosenammara@gmail.com</p>
@@ -27,8 +36,7 @@
       <div>
         <img src="https://i.ibb.co/bgVMZQx/image-480.png" alt="map">
       </div>
-    </div>
-  </div>
+    </div> -->
   <footers/>
 </template>
 
@@ -63,11 +71,15 @@ export default {
   <style scoped>
 .contact-container {
   background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
+  background-size: cover;
   display: flex;
   justify-content: space-between;
   padding: 40px;
 }
-  
+
+h1{
+  color: #f8f9fa;
+}
   .contact-form,
   .contact-details {
     flex: 1;
@@ -95,18 +107,22 @@ export default {
         label {
             display: block;
             margin-bottom: 10px;
+            color: white;
+            margin-right:40%;
         }
         input[type="text"],
         input[type="email"],
         textarea {
-            width: 100%;
+            width: 50%;
             padding: 10px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            opacity: 50%;
         }
         textarea {
             height: 150px;
+            opacity: 50%;
         }
         button[type="submit"] {
             background-color: #333;
@@ -137,6 +153,34 @@ export default {
     margin-bottom: 0; /* Remove the margin between sections in the row layout */
   }
 }
-        
+/* Update the existing media query for responsiveness */
+@media only screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Change flex direction to column for smaller screens */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .contact-form,
+  .contact-details {
+    margin-right: 0; /* Remove right margin for both sections */
+    margin-bottom: 20px; /* Add bottom margin to create spacing between sections */
+    padding: 20px; /* Adjust padding */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    margin-bottom: 10px; /* Reduce bottom margin for form inputs */
+  }
+
+  .contact-details {
+    height: auto; /* Remove fixed height for contact details section */
+  }
+
+  .social-icons {
+    margin-top: 10px; /* Adjust spacing for social icons */
+  }
+}
+
   </style>
   

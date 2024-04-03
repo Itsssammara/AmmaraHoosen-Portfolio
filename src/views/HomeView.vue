@@ -57,7 +57,7 @@ export default {
   background-repeat: no-repeat;
   background-color: #f0f0f0;
   background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
-  background-size: cover; /* Adjusted */
+  background-size: cover; 
 }
 
 

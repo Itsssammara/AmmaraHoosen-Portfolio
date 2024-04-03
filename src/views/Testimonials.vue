@@ -60,7 +60,7 @@ div
   text-align: center;
   background: fixed;
   width: auto;
-  /* background-size: cover; */
+  background-size: cover;
   background-position: center;
   height: 212dvh;
   background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
