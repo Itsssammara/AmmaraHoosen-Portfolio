@@ -1,16 +1,16 @@
 {
     "Resume": [
       {
-        "schoolname": "Alexander Sinton High School",
+        "schoolname": "Alexander Sinton High",
         "year": "2022",
         "description": "Completed highschool with a bachelor's pass in 2022.",
-        "url":"https://i.ibb.co/1JDCXkc/image-360.png"
+        "url":"https://i.ibb.co/XyKXt9L/sintonlgo.png" 
       },
       {
         "schoolname": "Life Choices Academy",
         "year": "Present",
         "description": "Currently a student studying web development.",
-        "url":"https://i.ibb.co/yVdWFy1/image-720.png"
+        "url":"https://i.ibb.co/rt8cvcn/LCLOGO.jpg"
       }
     ],
     "Skills": [

@@ -6,6 +6,7 @@
       <div class="cards">
         <div v-for="resume of $store.state.resume" v-bind:key="resume" class="resume-card">
           <div class="resumeinfo">
+            <img :src="resume.url" class="resume-image">
             <h2 class="resumename">{{ resume.schoolname }}</h2>
             <p class="resume-text">{{ resume.year }}</p>
             <p class="resume-text">{{ resume.description }}</p>
@@ -17,8 +18,6 @@
     <!-- html Card 1 -->
     <div class="skill-card">
       <img src="https://i.ibb.co/jMtxNJS/image-360.png" alt="HTML Image" class="skill-image">
-      <img src="https://i.ibb.co/XyKXt9L/sintonlgo.png" alt="sintonlgo" border="0">
-<img src="https://i.ibb.co/rt8cvcn/LCLOGO.jpg" alt="LCLOGO" border="0">
     </div>
 
     <!-- css Card 2 -->
@@ -96,10 +95,10 @@ export default {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.resume-card:hover {
+/* .resume-card:hover {
   box-shadow: 0 8px 16px rgba(10, 10, 10, 0.2);
   transform: scale(1.10); 
-}
+} */
 
 .resume-image {
   width: 100%;
@@ -109,7 +108,8 @@ export default {
 }
 
 .resumeinfo {
-  text-align: left;
+  /* text-align: left; */
+  
 }
 
 .resumename {
