@@ -14,38 +14,30 @@
       </div>
       <h1>Skills</h1>
       <div class="skills-container">
-    <!-- Skill Card 1 -->
+    <!-- html Card 1 -->
     <div class="skill-card">
-      <h2 class="skill-name">HTML</h2>
-      <p class="skill-level">Proficient</p>
       <img src="https://i.ibb.co/jMtxNJS/image-360.png" alt="HTML Image" class="skill-image">
       <img src="https://i.ibb.co/XyKXt9L/sintonlgo.png" alt="sintonlgo" border="0">
 <img src="https://i.ibb.co/rt8cvcn/LCLOGO.jpg" alt="LCLOGO" border="0">
     </div>
 
-    <!-- Skill Card 2 -->
+    <!-- css Card 2 -->
     <div class="skill-card">
-      <h2 class="skill-name">CSS</h2>
-      <p class="skill-level">Proficient</p>
       <img src="https://i.ibb.co/q75Pd8J/image-360.png" alt="CSS Image" class="skill-image">
     </div>
 
-    <!-- Skill Card 3 -->
+    <!-- bootstrap Card 3 -->
     <div class="skill-card">
-      <h2 class="skill-name">Bootsrap</h2>
-      <p class="skill-level">Proficient</p>
       <img src="https://i.ibb.co/Y817gCk/image-360.png" alt="CSS Image" class="skill-image">
     </div>
 
+    <!-- js Card 3 -->
     <div class="skill-card">
-      <h2 class="skill-name">Javascript</h2>
-      <p class="skill-level">Proficient</p>
       <img src="https://i.ibb.co/Q8cWZ3q/image-360.png" alt="CSS Image" class="skill-image">
     </div>
 
+    <!-- vue Card 3 -->
     <div class="skill-card">
-      <h2 class="skill-name">Vue.js</h2>
-      <p class="skill-level">Proficient</p>
       <img src="https://i.ibb.co/80gT044/image-360.png" alt="CSS Image" class="skill-image">
     </div>
 
