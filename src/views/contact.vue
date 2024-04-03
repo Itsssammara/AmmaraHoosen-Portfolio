@@ -79,6 +79,7 @@ export default {
 
 h1{
   color: #f8f9fa;
+  font-family: Black Ops One;
 }
   .contact-form,
   .contact-details {

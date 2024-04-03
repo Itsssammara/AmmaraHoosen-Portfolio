@@ -8,38 +8,12 @@
       },
       {
         "schoolname": "Life Choices Academy",
-        "year": "Present",
-        "description": "Currently a student studying web development.",
+        "year": "2023-2024",
+        "description": "Completed a 6 month coding bootcamp.",
         "url":"https://i.ibb.co/rt8cvcn/LCLOGO.jpg"
       }
     ],
-    "Skills": [
-      {
-        "name": "HTML",
-        "level": "Proficient",
-        "url": "https://i.ibb.co/jMtxNJS/image-360.png"
-      },
-      {
-        "name": "CSS",
-        "level": "Proficient",
-        "url": "https://i.ibb.co/q75Pd8J/image-360.png"
-      },
-      {
-        "name": "Bootstrap",
-        "level": "Intermediate",
-        "url": "https://i.ibb.co/Y817gCk/image-360.png"
-      },
-      {
-        "name": "Javascript",
-        "level": "Beginner",
-        "url": "https://i.ibb.co/Q8cWZ3q/image-360.png"
-      },
-      {
-        "name": "Vue.js",
-        "level": "Beginner",
-        "url": "https://i.ibb.co/80gT044/image-360.png"
-      }
-    ],
+    
     "Projects": [
       {
         "name": "Calculator",

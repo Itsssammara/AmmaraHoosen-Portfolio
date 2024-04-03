@@ -15,32 +15,14 @@
       </div>
       <h1>Skills</h1>
       <div class="skills-container">
-    <!-- html Card 1 -->
-    <div class="skill-card">
-      <img src="https://i.ibb.co/jMtxNJS/image-360.png" alt="HTML Image" class="skill-image">
-    </div>
-
-    <!-- css Card 2 -->
-    <div class="skill-card">
-      <img src="https://i.ibb.co/q75Pd8J/image-360.png" alt="CSS Image" class="skill-image">
-    </div>
-
-    <!-- bootstrap Card 3 -->
-    <div class="skill-card">
-      <img src="https://i.ibb.co/Y817gCk/image-360.png" alt="CSS Image" class="skill-image">
-    </div>
-
-    <!-- js Card 3 -->
-    <div class="skill-card">
-      <img src="https://i.ibb.co/Q8cWZ3q/image-360.png" alt="CSS Image" class="skill-image">
-    </div>
-
-    <!-- vue Card 3 -->
-    <div class="skill-card">
-      <img src="https://i.ibb.co/80gT044/image-360.png" alt="CSS Image" class="skill-image">
-    </div>
-
-  </div>
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3-alt"></i>
+      <i class="fa-brands fa-bootstrap"></i>
+      <i class="fa-brands fa-js"></i>
+      <i class="fa-brands fa-vuejs"></i>
+      <i class="fa-solid fa-database"></i>
+      <i class="fa-brands fa-figma"></i>
+      </div>
       <footers/>
     </div>
   </template>
@@ -70,7 +52,7 @@ export default {
 .resume {
   padding: 20px;
   text-align: center;
-  height: 150vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-color: #f0f0f0;
   background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
@@ -106,12 +88,6 @@ export default {
   border-radius: 50%;
   margin-bottom: 10px; 
 }
-
-.resumeinfo {
-  /* text-align: left; */
-  
-}
-
 .resumename {
   color: #555;
   font-size: 1.5em;
@@ -132,7 +108,13 @@ export default {
     transform: translateX(0);
   }
 }
-
+.skills-container {
+  font-size: 130px;
+  justify-content: space-between;
+  color: rgb(91, 90, 90);
+  display: flex;
+  gap: 10px; 
+}
 
 
 </style>
