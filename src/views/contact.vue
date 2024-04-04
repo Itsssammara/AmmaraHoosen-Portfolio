@@ -21,7 +21,6 @@
       </form>
     </div>
     <div class="contact-details">
-      <div>
         <h2>Contact Details</h2>
         <p><i class="bi bi-envelope"></i>hoosenammara@gmail.com</p>
         <p><i class="bi bi-telephone"></i>074 524 8576</p>
@@ -33,7 +32,6 @@
          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -79,11 +77,14 @@ export default {
 
   .contact-details {
   width: 30%; 
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 11px;
   border-radius: 8px;
   margin-top: 20px;
-  opacity: 0.7; /* Adjust the opacity as needed */
+  /* opacity: 0.7;  */
+}
+.contact-details p{
+  color: #ccc;
 }
 
 .contact-container {
@@ -99,9 +100,10 @@ h1{
   font-family: Black Ops One;
 }
 h2{
-  color: #343131;
+  color: #f8f9fa;
   font-family: Black Ops One;
 }
+
   .contact-form,
   .contact-details {
     flex: 1;
@@ -270,5 +272,24 @@ h2{
             opacity: 0;
         }
     }
+.contact-details {
+  width: 30%; 
+  padding: 11px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 414px) {
+  .contact-details {
+    width: 95%; /* Adjust width for smaller mobile devices */
+  }
+  iframe{
+    width: 89vw;
+    padding: 5%;
+  }
+  .container {
+    flex: 1; 
+    margin-right: 20px;
+  }
+}
   </style>
   
