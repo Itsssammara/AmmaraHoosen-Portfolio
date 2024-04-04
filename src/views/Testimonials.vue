@@ -62,7 +62,7 @@ div
   width: auto;
   background-size: cover;
   background-position: center;
-  height: 212dvh;
+  height: 190dvh;
   background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
   animation: fadeInLeft 1s ease-in-out; /* Apply the fade-in animation */
 }

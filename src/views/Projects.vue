@@ -85,7 +85,7 @@ h1 {
   box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
   font-family: "Lora", serif;
   margin: 25px 0;
-  min-height: 515px;
+  height: 515px;
   overflow: hidden;
   width: 100%;
   border-radius: 8px;

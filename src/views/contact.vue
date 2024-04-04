@@ -285,10 +285,14 @@ h2{
   iframe{
     width: 89vw;
     padding: 5%;
+    /* margin-right: 15%; */
   }
   .container {
     flex: 1; 
     margin-right: 20px;
+  }
+  label{
+    margin-left: 10%;
   }
 }
   </style>

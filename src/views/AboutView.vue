@@ -8,8 +8,7 @@
           </div>
           <div class="about-details">
             <p>Greetings! My name is Ammara, and I am fueled by a fervent passion for seizing every opportunity that comes my way. I take great pride in my innate ability to not only take initiative but also to continually embrace new knowledge and skills with an insatiable hunger for growth.
-            Since childhood, I have found myself drawn to the mesmerizing worlds of art and technology, where creativity intertwines seamlessly with innovation. It is this intersection that has guided me towards the exciting realms of Web Development and UI/UX design, where I am able to seamlessly marry my love for aesthetics with my fascination for cutting-edge technology.
-           </p>
+            Since childhood, I have found myself drawn to the mesmerizing worlds of art and technology, where creativity intertwines seamlessly with innovation. It is this intersection that has guided me towards the exciting realms of Web Development and UI/UX design.</p>
         </div>
       </div>
     </div>

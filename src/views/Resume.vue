@@ -22,6 +22,14 @@
       <i class="fa-brands fa-vuejs"></i>
       <i class="fa-solid fa-database"></i>
       <i class="fa-brands fa-figma"></i>
+      </div><br><br><br>
+      <h1>Soft Skills</h1>
+      <div class="soft-skills">
+        <i class="fa-solid fa-paintbrush"></i>
+      <i class="fa-solid fa-business-time"></i>
+      <i class="fa-solid fa-people-arrows"></i>
+      <i class="fa-solid fa-infinity"></i>
+
       </div>
       <footers/>
     </div>
@@ -52,7 +60,7 @@ export default {
 .resume {
   padding: 20px;
   text-align: center;
-  height: 100vh;
+  height: 200vh;
   background-repeat: no-repeat;
   background-color: #f0f0f0;
   background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
@@ -114,6 +122,14 @@ export default {
   color: rgb(134, 133, 133);
   display: flex;
   gap: 10px; 
+}
+.soft-skills{
+  font-size: 100px;
+  justify-content: center;
+  /* justify-content: space-between; */
+  color: rgb(134, 133, 133);
+  display: flex;
+  gap: 10px;
 }
 
 
