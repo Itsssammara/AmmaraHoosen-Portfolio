@@ -75,7 +75,7 @@ div
   margin: 30px; 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 154px;
+  grid-gap: 140px;
   margin-top: 60px;
 }
 

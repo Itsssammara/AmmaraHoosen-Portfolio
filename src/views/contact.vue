@@ -2,7 +2,7 @@
   <div class="contact-container">
     <div class="container">
       <h1>Get In Touch</h1>
-      <form @submit.prevent="submitForm" method="post">
+      <form action="https://formspree.io/f/mrgnynzb" target="_blank" method="POST">
         <div class="form-group">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required>
@@ -15,8 +15,8 @@
           <label for="message">Message:</label>
           <textarea id="message" name="message" required></textarea>
         </div>
-        <div class="form-group">
-          <button type="submit">Submit</button>
+        <div class="form-btn">
+          <input type="submit" value="Submit">
         </div>
       </form>
     </div>
@@ -28,8 +28,9 @@
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/ammara-hoosen-364913288" target="_blank"><i class="bi bi-linkedin"></i></a>
           <a href="https://github.com/Itsssammara" target="_blank"><i class="bi bi-github"></i></a>
-          <a href="https://www.instagram.com/marie_paints_?utm_source=qr&igsh=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="bi bi-instagram"></i></a>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13235.946374821839!2d18.492211959253602!3d-33.967184071022515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc449f313450dd%3A0x459cb4fa2f12472b!2sAthlone%2C%20Cape%20Town%2C%207760!5e0!3m2!1sen!2sza!4v1712222339375!5m2!1sen!2sza"
+         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
@@ -77,12 +78,13 @@ export default {
   }
 
   .contact-details {
-    width: 30%; /* Adjust width as needed */
-    background-color: #fff;
-    padding: 11px;
-    border-radius: 8px;
-    margin-top: 20px;
-  }
+  width: 30%; 
+  background-color: #fff;
+  padding: 11px;
+  border-radius: 8px;
+  margin-top: 20px;
+  opacity: 0.7; /* Adjust the opacity as needed */
+}
 
 .contact-container {
   background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
@@ -96,27 +98,28 @@ h1{
   color: #f8f9fa;
   font-family: Black Ops One;
 }
+h2{
+  color: #343131;
+  font-family: Black Ops One;
+}
   .contact-form,
   .contact-details {
     flex: 1;
   }
   
   .contact-form {
-    /* Add styling for the contact form section */
     background-color: #f8f9fa;
     padding: 10px;
     border-radius: 8px;
     margin-right: 20px;
   }
-  
-  .contact-details {
-    /* Add styling for the contact details section */
+  /* .contact-details {
     background-color: #fff;
     padding: 11px;
     border-radius: 8px;
-    height: 70vh;
+    height: 40vh;
     margin-top: 20px;
-  }
+  } */
   .contact-form {
             margin-top: 20px;
         }
@@ -124,12 +127,12 @@ h1{
             display: block;
             margin-bottom: 10px;
             color: white;
-            margin-right:40%;
+            margin-right:70%;
         }
         input[type="text"],
         input[type="email"],
         textarea {
-            width: 50%;
+            width: 80%;
             padding: 10px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
@@ -156,10 +159,13 @@ h1{
         }
 
         .social-icons a {
-         margin-right: 10px; /* Adjust the spacing between icons */
-         color: #333; /* Set the icon color */
+         margin-left: 10px; 
+         color: #a707bd; 
+         font-size: 24px;
+         transition: transform 0.3s ease;
         }
-        @media only screen and (max-width: 768px) {
+
+ @media only screen and (max-width: 768px) {
   .contact-container {
     flex-direction: row; /* Switch to a row layout on larger screens */
   }
@@ -190,13 +196,79 @@ h1{
   }
 
   .contact-details {
-    height: auto; /* Remove fixed height for contact details section */
+    height: auto;
   }
 
   .social-icons {
     margin-top: 10px; /* Adjust spacing for social icons */
   }
 }
+.form-btn {
+        text-align: center;
+        margin-top: 20px;
+    }
 
+    .form-btn input[type="submit"] {
+        background-color: #b3acb7a2;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        position: relative;
+        overflow: hidden;
+        width: 100px;
+    }
+
+    .form-btn input[type="submit"]:hover {
+        background-color: #201a22; /* Pink color */
+    }
+
+    .form-btn input[type="submit"]:hover::before {
+        content: "";
+        position: absolute;
+        background: rgba(255, 105, 180, 0.5); /* Light pink with some transparency */
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        transform: translate(-50%, -50%);
+        transition: width 0.5s, height 0.5s, opacity 0.5s;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .form-btn input[type="submit"]:hover::after {
+        content: "";
+        position: absolute;
+        background: rgba(255, 105, 180, 0.5); /* Light pink with some transparency */
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        transform: translate(-50%, -50%);
+        transition: width 0.5s, height 0.5s, opacity 0.5s;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .form-btn input[type="submit"]:hover::before,
+    .form-btn input[type="submit"]:hover::after {
+        animation: glow 1s infinite alternate;
+    }
+
+    @keyframes glow {
+        0% {
+            width: 0;
+            height: 0;
+            opacity: 1;
+        }
+        100% {
+            width: 300%;
+            height: 300%;
+            opacity: 0;
+        }
+    }
   </style>
   

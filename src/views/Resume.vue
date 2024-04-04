@@ -1,7 +1,7 @@
 <template>
     <div class="resume">
       <div>
-        <h1>Education</h1>
+        <h1>Education /Work Experience</h1>
       </div>
       <div class="cards">
         <div v-for="resume of $store.state.resume" v-bind:key="resume" class="resume-card">
@@ -111,7 +111,7 @@ export default {
 .skills-container {
   font-size: 130px;
   justify-content: space-between;
-  color: rgb(91, 90, 90);
+  color: rgb(134, 133, 133);
   display: flex;
   gap: 10px; 
 }
