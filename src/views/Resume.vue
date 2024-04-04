@@ -118,17 +118,17 @@ export default {
 }
 .skills-container {
   font-size: 130px;
-  justify-content: space-between;
   color: rgb(134, 133, 133);
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px; 
 }
+
 .soft-skills{
   font-size: 100px;
-  justify-content: center;
-  /* justify-content: space-between; */
   color: rgb(134, 133, 133);
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px;
 }
 

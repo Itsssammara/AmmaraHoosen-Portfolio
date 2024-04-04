@@ -151,8 +151,8 @@ h1 {
 
 .project-icons a {
   margin-left: 20px;
-  font-size: 24px; /* Adjust icon size */
-  color: black; /* Set icon color to black */
+  font-size: 24px; 
+  color: black; 
 }
 @keyframes fadeInLeft {
   from {

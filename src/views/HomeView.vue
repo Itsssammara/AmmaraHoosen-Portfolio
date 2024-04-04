@@ -12,7 +12,7 @@
       <h1 class="fade-in slide-from-left" id="first-sentence">Hi, I'm <span class="highlight">Ammara  Hoosen</span></h1>
       <h2 class="fade-in slide-from-right" id="second-sentence" style="animation-delay: 1.1s;">Aspiring <span class="highlight">UI/UX Developer</span></h2>
     </div><br>
-    <a class="animated-btn animate_animated animate__zoomIn" href="path/to/your_cv.pdf" download>Download CV</a>
+    <a class="animated-btn animate_animated animate__zoomIn" target="_blank" href="" download>Download CV</a>
   </div>
 </template>
 
@@ -173,6 +173,9 @@ export default {
         }
       }
 
+      .text-container{
+        transform: scale(1.1);
+      }
     /* Hover effect */
     .animated-btn:hover {
         transform: scale(1.1);
