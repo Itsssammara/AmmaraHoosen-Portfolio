@@ -1,7 +1,7 @@
 <template>
-  <div class="resume">
+  <div class="resume"><br>
     <div>
-      <h1>Education /Work Experience</h1>
+      <h1>Education / Work Experience</h1>
     </div>
     <div class="cards">
       <div v-for="resume of $store.state.resume" v-bind:key="resume" class="resume-card">
@@ -53,6 +53,10 @@
       <div class="skill">
         <i class="fa-solid fa-paintbrush"></i>
         <span>Creativity</span>
+      </div>
+      <div class="skill">
+        <i class="fa-solid fa-face-smile-beam"></i>
+        <span>Emotional Intelligence</span>
       </div>
       <div class="skill">
         <i class="fa-solid fa-business-time"></i>
@@ -193,15 +197,11 @@ h1 {
   /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
   gap: 10px;
+  width: 50%;
+  justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
 }
-
-/* .skills-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-      grid-gap: 20px;
-    } */
 
 .skill {
   text-align: center;
@@ -214,5 +214,38 @@ h1 {
 .skill span {
   font-size: 14px;
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-gap: 20px; /* Adjust grid gap for smaller screens */
+  }
+
+  .resume-card {
+    width: 100%; /* Adjust card width for smaller screens */
+  }
+
+  .skills-container1,
+  .skills-container2,
+  .soft-skills {
+    font-size: 70px; /* Adjust font size for smaller screens */
+    justify-content: center; 
+    display: inline-block;
+    /* Center the skills container on small screens */
+  }
+  .skills-container1{
+    margin-left: 45%;
+  }
+  .skills-container2{
+    margin-left: 30%;
+    /* margin-bottom: 50%; */
+  }
+  .soft-skills{
+    margin-left: 30%;
+  }
+  .skills-container1 .skill,
+  .skills-container2 .skill,
+  .soft-skills .skill {
+    width: 45%; /* Set width for skills on small screens */
+  }
 }
 </style>

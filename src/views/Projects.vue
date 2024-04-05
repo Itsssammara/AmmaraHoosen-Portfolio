@@ -1,5 +1,5 @@
 <template>
-  <div class="projects">
+  <div class="projects"><br>
     <div>
       <h1>My Projects</h1>
     </div><br><br>
@@ -85,10 +85,15 @@ h1 {
   box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
   font-family: "Lora", serif;
   margin: 25px 0;
-  height: 515px;
+  height: 515px; /* Default height for cards */
   overflow: hidden;
   width: 100%;
   border-radius: 8px;
+}
+.card-body:hover {
+  box-shadow: 0 8px 16px rgba(9, 9, 9, 0.527);
+  transform: scale(1.1); 
+  transition: box-shadow 0.3s ease, transform 0.3s ease; 
 }
 
 @media (min-width: 768px) {
@@ -98,14 +103,14 @@ h1 {
   }
   .card-body {
     margin: 25px 10px;
-    width: 45%;
+    width: calc(50% - 20px); /* Adjust card width for smaller screens with a gap of 20px between cards */
   }
 }
 
 @media (min-width: 1024px) {
   .card-body {
     margin: 25px 15px;
-    width: 30%;
+    width: calc(30% - 30px); /* Adjust card width for larger screens with a gap of 30px between cards */
   }
 }
 
@@ -154,6 +159,14 @@ h1 {
   font-size: 24px; 
   color: black; 
 }
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .card-body {
+    height: 400px; /* Adjust the height for small screens */
+  }
+}
+
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -164,6 +177,5 @@ h1 {
     transform: translateX(0);
   }
 }
-
 
 </style>

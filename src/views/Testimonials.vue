@@ -1,5 +1,5 @@
 <template>
-    <div class="testimonials">
+    <div class="testimonials"><br>
      <div ><h1>Peer Reviews </h1></div>
        <div class="cards">
             <div v-for="testimonial in $store.state.testimonials" :key="testimonial.id" class="testimonial-card">
@@ -91,6 +91,7 @@ div
 .testimonial-card:hover {
   box-shadow: 0 8px 16px rgba(255, 185, 185, 0.527);
   transform: scale(1.10); 
+  transition: box-shadow 0.3s ease, transform 0.3s ease; 
 }
 
 .testimonial-image {
