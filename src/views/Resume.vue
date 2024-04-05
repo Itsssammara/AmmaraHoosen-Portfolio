@@ -248,4 +248,42 @@ h1 {
     width: 45%; /* Set width for skills on small screens */
   }
 }
+.skill .fa-html5,
+.fa-css3-alt,
+.fa-bootstrap,
+.fa-js,
+.fa-vuejs,
+.fa-database,
+.fa-figma
+ {
+  transition: 0.5s ease all;
+}
+.skill .fa-html5:hover {
+  transform: scale(1.2);
+  color: tomato;
+}
+.skill .fa-css3-alt:hover {
+  transform: scale(1.2);
+  color: teal;
+}
+.skill .fa-bootstrap:hover {
+  transform: scale(1.2);
+  color: purple;
+}
+.skill .fa-js:hover {
+  transform: scale(1.2);
+  color: yellow;
+}
+.skill .fa-vuejs:hover {
+  transform: scale(1.2);
+  color: forestgreen;
+}
+.skill .fa-database:hover {
+  transform: scale(1.2);
+  color: aquamarine;
+}
+.skill .fa-figma:hover {
+  transform: scale(1.2);
+  color: rebeccapurple;
+}
 </style>

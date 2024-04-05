@@ -12,7 +12,7 @@
       <h1 class="fade-in slide-from-left" id="first-sentence">Hi, I'm <span class="highlight">Ammara  Hoosen</span></h1>
       <h2 class="fade-in slide-from-right" id="second-sentence" style="animation-delay: 1.1s;">Aspiring <span class="highlight">Web & UI/UX Developer</span></h2>
     </div><br>
-    <a class="animated-btn animate_animated animate__zoomIn" target="_blank" href="" download>Download CV</a>
+    <a class="animated-btn animate_animated animate__zoomIn" target="_blank" href="https://drive.google.com/file/d/1C6ycU-ltfr5suwbyI0dzU518Mt_KKUOX/view?usp=sharing" download>Download CV</a>
   </div>
 </template>
 
@@ -83,12 +83,12 @@ export default {
 #first-sentence {
   font-size: 60px;
   font-family: 'Arial', sans-serif; 
-  color: #47c76e;  
+  color: #47c3c7;  
 }
 
 #second-sentence {
   font-size: 50px;
-  color: #47c76e;  
+  color: #47c3c7;  
 }
 
 .highlight {
