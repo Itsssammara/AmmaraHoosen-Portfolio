@@ -1,18 +1,21 @@
 <template>
  <navigation/>
+
+ <router-view/>
  
+ <Footer/>
 </template>
 
 <script>
 import navigation from '@/components/navigation.vue'
-import footer from '@/components/footer.vue'
+import Footer from '@/components/footer.vue'
 import spinner from '@/components/spinner.vue'
 
 export default {
   name: 'HomeView',
   components: {
    navigation,
-   footer,
+   Footer,
    spinner
   }
 }

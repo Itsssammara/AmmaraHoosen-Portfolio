@@ -2,7 +2,7 @@
   <div class="projects">
     <div>
       <h1>My Projects</h1>
-    </div>
+    </div><br><br>
     <div class="container">
       <div v-for="project in $store.state.projects" :key="project.id" class="card-body">
         <img :src="project.url" class="content-img" alt="projectcard">
@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-    <footers />
+    <!-- <footers /> -->
   </div>
 </template>
 
@@ -52,7 +52,7 @@ h1 {
   width: auto;
   background-size: cover;
   background-position: center;
-  height: 200dvh;
+  min-height: 200vh;
   background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
   animation: fadeInLeft 1s ease-in-out; 
 }

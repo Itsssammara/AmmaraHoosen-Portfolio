@@ -33,7 +33,7 @@
         </div>
       </div>
     </nav>
-    <router-view/>
+    <!-- <router-view/> -->
   </div>
 </template>
 
@@ -48,11 +48,11 @@
   color: rgb(81, 206, 210);
   margin: 0 10px; /* Adds spacing between links */
   padding: 5px 10px;
-  font-family: bold;
+  font-family: Black Ops One;
 }
 
 .nav-link:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #9732ac;
 }
 
 </style>

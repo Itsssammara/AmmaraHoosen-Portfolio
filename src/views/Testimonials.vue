@@ -10,7 +10,7 @@
                 </div>
             </div>
        </div>
-       <footers/>
+       <!-- <footers/> -->
     </div>
 </template>
 
@@ -62,7 +62,7 @@ div
   width: auto;
   background-size: cover;
   background-position: center;
-  height: 190dvh;
+  min-height: 200vh;
   background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
   animation: fadeInLeft 1s ease-in-out; /* Apply the fade-in animation */
 }
