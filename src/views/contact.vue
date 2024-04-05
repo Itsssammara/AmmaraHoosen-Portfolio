@@ -115,13 +115,6 @@ h2{
     border-radius: 8px;
     margin-right: 20px;
   }
-  /* .contact-details {
-    background-color: #fff;
-    padding: 11px;
-    border-radius: 8px;
-    height: 40vh;
-    margin-top: 20px;
-  } */
   .contact-form {
             margin-top: 20px;
         }

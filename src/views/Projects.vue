@@ -150,8 +150,6 @@ h1 {
 .project-icons {
   display: flex;
   margin-top: 20px;
-  justify-content: flex-end;
-  margin-left: 160px;
 }
 
 .project-icons a {

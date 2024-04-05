@@ -1,8 +1,8 @@
 <template>
   <div id="app">
       <div class="about">
-        <div class="about-content">
-          <h1>About Me</h1>      
+        <div class="about-content"><br>
+          <h1>About Me</h1><br>      
           <div class="about-image">
             <img src="https://cdn-thumbs.imagevenue.com/cc/d7/6a/ME17GC7I_t.jpg" alt="Profile Image">
           </div>
@@ -20,6 +20,10 @@
                 <li>Coding</li>
               </ul>
             </ul>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/ammara-hoosen-364913288" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/Itsssammara" target="_blank"><i class="bi bi-github"></i></a>
+        </div>
         </div>
       </div>
     </div>
@@ -85,6 +89,7 @@ h1 {
   margin-top: 4%;
   max-width: 600px;
   text-align: center;
+  font-family: Archivo Black;
 }
 
 p {
@@ -102,6 +107,16 @@ p {
   padding: 20px; 
   flex-grow: 1; /* Make the content area grow to fill the available space */
 }
+.social-icons {
+          margin-top: 10px;
+        }
+
+        .social-icons a {
+         margin-left: 10px; 
+         color: #a707bd; 
+         font-size: 24px;
+         transition: transform 0.3s ease;
+        }
 @keyframes fadeInLeft {
   from {
     opacity: 0;
