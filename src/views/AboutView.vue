@@ -55,7 +55,7 @@ export default {
   flex-direction: column;
   /* align-items: center;
   justify-content: center; */
-  min-height: 100vh;
+  min-height: 00vh;
   background-repeat: no-repeat;
   background-color: #f0f0f0;
   background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');

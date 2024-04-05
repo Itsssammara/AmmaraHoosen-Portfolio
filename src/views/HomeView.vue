@@ -10,7 +10,7 @@
     </div> -->
     <div class="text-container">
       <h1 class="fade-in slide-from-left" id="first-sentence">Hi, I'm <span class="highlight">Ammara  Hoosen</span></h1>
-      <h2 class="fade-in slide-from-right" id="second-sentence" style="animation-delay: 1.1s;">Aspiring <span class="highlight">UI/UX Developer</span></h2>
+      <h2 class="fade-in slide-from-right" id="second-sentence" style="animation-delay: 1.1s;">Aspiring <span class="highlight">Web & UI/UX Developer</span></h2>
     </div><br>
     <a class="animated-btn animate_animated animate__zoomIn" target="_blank" href="" download>Download CV</a>
   </div>
