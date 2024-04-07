@@ -193,7 +193,7 @@ h1 {
 /* Media Query for Small Screens */
 @media (max-width: 768px) {
   .card-body {
-    height: 400px; /* Adjust the height for small screens */
+    height: 350px; /* Adjust the height for small screens */
   }
 }
 

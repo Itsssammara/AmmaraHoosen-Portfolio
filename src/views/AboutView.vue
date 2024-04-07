@@ -15,8 +15,10 @@
                   Since childhood, I have found myself drawn to the mesmerizing worlds of art and technology, where creativity intertwines seamlessly with innovation. <br> It is this intersection that has guided me towards the exciting realms of Web Development and UI/UX design.</p>
                 </div>
               </div>
+            </div>
+            <div class="row">
               <div class="col-lg-6">
-                <div class="box2" style="animation: fadeInLeft 1s forwards;">
+                <div class="box2">
                   <ul>
                     <li><strong>Date of Birth :</strong> October 21, 2004</li>
                     <li><strong>Location : </strong> Athlone, Cape town</li>
@@ -42,11 +44,35 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  // destroyed() {
+  //   window.removeEventListener('scroll', this.handleScroll);
+  // },
+  methods: {
+    handleScroll() {
+      const box1 = document.querySelector('.box');
+      const box2 = document.querySelector('.box2');
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const box1Position = box1.offsetTop + box1.offsetHeight;
+      
+      if (scrollPosition > box1Position) {
+        box2.classList.add('slideInRight');
+      }
+    }
+  }
+}
+
+</script>
+
 <style scoped>
 .about {
   display: flex;
   flex-direction: column;
-  min-height: 00vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-color: #f0f0f0;
   background-image: url('https://i.postimg.cc/SQWHkbwY/bg1.jpg');
@@ -72,7 +98,7 @@
   background-color: rgba(2, 1, 1, 0.5);
   box-shadow: 0 0 20px blue;
   border-radius: 20px;
-  margin: 0 10px;
+  margin: 0 20px 30px; /* Adjusted margin between the boxes */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,6 +167,7 @@ ul li::before {
     transform: translateX(0);
   }
 }
+
 .social-icons {
   margin-top: 10px;
   display: flex;
@@ -164,13 +191,28 @@ ul li::before {
     transform: translateY(-10px);
   }
 }
+
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
   .box,
   .box2 {
     width: 100%; 
-    margin-bottom: 30px;
-    margin-left: 0%;/* Change width for smaller screens */
+    margin: 0 0 30px; /* Adjusted margin */
+  }
+}
+
+.slideInRight {
+  animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 </style>
