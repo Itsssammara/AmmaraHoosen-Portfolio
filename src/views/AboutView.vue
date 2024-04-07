@@ -87,7 +87,7 @@ h1 {
 .about-details {
   color: #fff;
   margin-top: 4%;
-  /* font-family: ; */
+  font-family: Roboto Condensed;
 }
 
 p {

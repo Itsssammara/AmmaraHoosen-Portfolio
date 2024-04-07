@@ -48,13 +48,12 @@
 .nav-link {
   color: rgb(81, 206, 210);
   margin: 0 10px;
-  /* Adds spacing between links */
   padding: 5px 10px;
   font-family: Black Ops One;
 }
 
 .nav-item {
-  height: 20px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;

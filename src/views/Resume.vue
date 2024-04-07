@@ -151,7 +151,7 @@ h1 {
 }
 
 .resume-text {
-  font-style: italic;
+  font-style: Roboto Condensed;
   color: #555;
 }
 

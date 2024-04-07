@@ -6,7 +6,8 @@
                 <img :src="testimonial.url" class="testimonial-image" alt="testimage">
                 <div class="testinfo">
                     <h2 class="test-name">{{ testimonial.name }}</h2>
-                    <p class="test-text">{{ testimonial.message }}</p>
+                    <p class="test-text">{{ testimonial.subname }}</p>
+                    <p class="test-text">"{{ testimonial.message }}"</p>
                 </div>
             </div>
        </div>
@@ -108,11 +109,12 @@ div
 .test-name {
   color: #555;
   font-size: 1.5em;
+  font-family: Roboto Condensed;
   margin-bottom: 5px; 
 }
 
 .test-text {
-  font-style: italic;
+  font-style: Roboto Condensed;
   color: #555;
 }
 @keyframes fadeInLeft {

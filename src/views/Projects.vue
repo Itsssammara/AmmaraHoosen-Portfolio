@@ -5,20 +5,23 @@
     </div><br><br>
     <div class="container">
       <div v-for="project in $store.state.projects" :key="project.id" class="card-body">
-        <img :src="project.url" class="content-img" alt="projectcard">
+        <div class="image-container">
+          <img :src="project.url" class="content-img" alt="projectcard">
+          <div class="project-icons">
+            <a :href="project.github" target="_blank" class="icon-link"><i class="bi bi-github"></i></a>
+            <a :href="project.netlify" target="_blank" class="icon-link"><i class="bi bi-arrow-up-right-square-fill"></i></a>
+          </div>
+        </div>
         <div class="card-text">
           <h2 class="project-name">{{ project.name }}</h2>
           <p class="project-text">{{ project.description }}</p>
-          <div class="project-icons">
-            <a :href="project.github" target="_blank"><i class="bi bi-github"></i></a>
-            <a :href="project.netlify" target="_blank"><i class="bi bi-arrow-up-right-square-fill"></i></a>
-          </div>
         </div>
       </div>
     </div>
     <!-- <footers /> -->
   </div>
 </template>
+
 
 <script>
 import footers from "@/components/footer.vue";
@@ -58,12 +61,12 @@ h1 {
 }
 
 .card-text {
-  font-style: italic;
+  font-style: Roboto Condensed;
   color: #555;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Lora");
-@import url("https://fonts.googleapis.com/css?family=Lato");
+/* @import url("https://fonts.googleapis.com/css?family=Lora"); */
+/* @import url("https://fonts.googleapis.com/css?family=Lato"); */
 
 * {
   box-sizing: border-box;
@@ -83,9 +86,9 @@ h1 {
 .card-body {
   background-color: #ffffff;
   box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
-  font-family: "Lora", serif;
+  font-family: Roboto Condensed;
   margin: 25px 0;
-  height: 515px; /* Default height for cards */
+  height: 450px; /* Default height for cards */
   overflow: hidden;
   width: 100%;
   border-radius: 8px;
@@ -155,9 +158,38 @@ h1 {
 .project-icons a {
   margin-left: 20px;
   font-size: 24px; 
-  color: black; 
+  color: rgb(123, 73, 151); 
 }
 
+.image-container {
+  position: relative;
+}
+
+.content-img {
+  transition: filter 0.3s ease; 
+}
+
+.card-body:hover .content-img {
+  filter: blur(2.5px); /* Apply blur effect on hover */
+}
+
+.project-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Initially hide the icons */
+  transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.card-body:hover .project-icons {
+  opacity: 1; /* Show the icons on hover */
+}
+.icon-link {
+  margin: 0 10px;
+  font-size: 24px; 
+  color: rgb(0, 0, 0); 
+}
 /* Media Query for Small Screens */
 @media (max-width: 768px) {
   .card-body {

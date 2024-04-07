@@ -85,6 +85,7 @@ export default {
 }
 .contact-details p{
   color: #ccc;
+  font-family: Roboto Condensed;
 }
 
 .contact-container {
