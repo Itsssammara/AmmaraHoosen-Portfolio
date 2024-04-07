@@ -45,26 +45,26 @@
 </template>
 
 <script>
-export default {
-  mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  // destroyed() {
-  //   window.removeEventListener('scroll', this.handleScroll);
-  // },
-  methods: {
-    handleScroll() {
-      const box1 = document.querySelector('.box');
-      const box2 = document.querySelector('.box2');
-      const scrollPosition = window.scrollY + window.innerHeight;
-      const box1Position = box1.offsetTop + box1.offsetHeight;
+// export default {
+//   mounted() {
+//     window.addEventListener('scroll', this.handleScroll);
+//   },
+//   // destroyed() {
+//   //   window.removeEventListener('scroll', this.handleScroll);
+//   // },
+//   methods: {
+//     handleScroll() {
+//       const box1 = document.querySelector('.box');
+//       const box2 = document.querySelector('.box2');
+//       const scrollPosition = window.scrollY + window.innerHeight;
+//       const box1Position = box1.offsetTop + box1.offsetHeight;
       
-      if (scrollPosition > box1Position) {
-        box2.classList.add('slideInRight');
-      }
-    }
-  }
-}
+//       if (scrollPosition > box1Position) {
+//         box2.classList.add('slideInRight');
+//       }
+//     }
+//   }
+// }
 
 </script>
 
