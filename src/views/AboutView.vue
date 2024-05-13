@@ -11,7 +11,7 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="box" style="animation: fadeInLeft 1s forwards;">
-                  <p>Greetings! My name is Ammara, and I am fueled by a fervent passion for seizing every opportunity that comes my way. <br> I take great pride in my innate ability to not only take initiative but also to continually embrace new knowledge and skills with an insatiable hunger for growth.
+                  <p>Hey there! I'm Ammara, aspiring frontend developer and UI/UX designer. <br> I'm all about grabbing opportunities as they come my way. Since forever, I've loved the blend of art and tech, where creativity meets innovation.
                   Since childhood, I have found myself drawn to the mesmerizing worlds of art and technology, where creativity intertwines seamlessly with innovation. <br> It is this intersection that has guided me towards the exciting realms of Web Development and UI/UX design.</p>
                 </div>
               </div>
@@ -26,7 +26,7 @@
                     <ul>
                       <li>Reading</li>
                       <li>Kick-boxing</li>
-                      <li>Watching anime</li>
+                      <li>Going on adventures</li>
                       <li>Painting</li>
                     </ul>
                   </ul>
