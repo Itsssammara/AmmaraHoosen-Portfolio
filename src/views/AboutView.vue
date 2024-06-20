@@ -4,7 +4,7 @@
       <div class="about-content"><br>
         <h1>About Me</h1><br>      
         <div class="about-image">
-          <img src="https://cdn-thumbs.imagevenue.com/cc/d7/6a/ME17GC7I_t.jpg" alt="Profile Image">
+          <img src="https://i.ibb.co/nPLNfrG/20240406-165625.jpg" alt="Profile Image">
         </div>
         <div class="about-details">
           <div class="container">
@@ -87,11 +87,11 @@
 }
 
 .about-image img {
-  border-radius: 50%;
+  border-radius: 200%;
   margin-right: 20px;
   margin-top: 3%;
+  max-width: 190px;
 }
-
 .box,
 .box2 {
   width: 600px; 
