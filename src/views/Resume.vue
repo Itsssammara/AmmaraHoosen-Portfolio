@@ -48,6 +48,25 @@
       </div>
     </div>
     <br><br><br><br>
+    <h1>Achievements</h1><br>
+    <div class="badges">
+      <div class="skill">
+        <img src="https://i.ibb.co/HqFbzfP/operating-systems-basics.png" alt="">
+        
+      </div>
+      <div class="skill">
+        <img src="https://i.ibb.co/Bc8dkYp/network-technician-career-path.png" alt="">
+        
+      </div>
+      <div class="skill">
+        <img src="https://i.ibb.co/HX5fRmj/junior-cybersecurity-analyst-career-path-1-1.png" alt="">
+        
+      </div>
+      <div class="skill">
+        <img src="https://i.ibb.co/nwXB7vH/scrum.png" alt="">
+      </div>
+    </div>
+    <br><br><br><br>
     <h1>Soft Skills</h1>
     <div class="soft-skills">
       <div class="skill">
@@ -201,6 +220,22 @@ h1 {
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
+}
+.badges {
+  /* font-size: 100px;
+  color: rgb(134, 133, 133); */
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  gap: 10px;
+  width: 50%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.badges img {
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
 }
 
 .skill {
