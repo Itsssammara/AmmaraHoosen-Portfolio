@@ -18,11 +18,11 @@
     <div class="skills-container1">
       <div class="skill">
         <i class="fa-brands fa-html5"></i>
-        <span>HTML5</span>
+        <span>Html5</span>
       </div>
       <div class="skill">
         <i class="fa-brands fa-css3-alt"></i>
-        <span>CSS3</span>
+        <span>Css3</span>
       </div>
       <div class="skill">
         <i class="fa-brands fa-bootstrap"></i>
@@ -45,6 +45,10 @@
       <div class="skill">
         <i class="fa-brands fa-figma"></i>
         <span>Figma</span>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-wordpress"></i>
+        <span>WordPress</span>
       </div>
     </div>
     <br><br><br><br>
@@ -289,29 +293,30 @@ h1 {
 .fa-js,
 .fa-vuejs,
 .fa-database,
-.fa-figma
+.fa-figma,
+.fa-wordpress
  {
   transition: 0.5s ease all;
 }
 .skill .fa-html5:hover {
   transform: scale(1.2);
-  color: tomato;
+  color: aquamarine;
 }
 .skill .fa-css3-alt:hover {
   transform: scale(1.2);
-  color: teal;
+  color: taquamarineeal;
 }
 .skill .fa-bootstrap:hover {
   transform: scale(1.2);
-  color: purple;
+  color: aquamarine;
 }
 .skill .fa-js:hover {
   transform: scale(1.2);
-  color: yellow;
+  color: aquamarine;
 }
 .skill .fa-vuejs:hover {
   transform: scale(1.2);
-  color: forestgreen;
+  color: aquamarine;
 }
 .skill .fa-database:hover {
   transform: scale(1.2);
@@ -319,6 +324,10 @@ h1 {
 }
 .skill .fa-figma:hover {
   transform: scale(1.2);
-  color: rebeccapurple;
+  color: aquamarine;
+}
+.skill .fa-wordpress:hover {
+  transform: scale(1.2);
+  color: aquamarine;
 }
 </style>
