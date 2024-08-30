@@ -12,7 +12,7 @@
       <h1 class="fade-in slide-from-left" id="first-sentence">Hi, I'm <span class="highlight">Ammara  Hoosen</span></h1>
       <h2 class="fade-in slide-from-right" id="second-sentence" style="animation-delay: 1.1s;">Aspiring <span class="highlight">Web & UI/UX Developer</span></h2>
     </div><br>
-    <a class="animated-btn animate_animated animate__zoomIn" target="_blank" href="https://drive.google.com/file/d/1e3qIdSnrGBxgPzs3_KdCdBUlgacJVmY0/view?usp=sharing" download>Download CV</a>
+    <a class="animated-btn animate_animated animate__zoomIn" target="_blank" href="https://drive.google.com/file/d/1ZX1fOiGnz7IEZ3BXMN0sDKJ62jsIfzqt/view?usp=sharing" download>Download CV</a>
   </div>
 </template>
 
