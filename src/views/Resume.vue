@@ -161,11 +161,12 @@ h1 {
 } */
 
 .resume-image {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 50%;
+  width: 300px;  /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
+  object-fit: cover; /* Ensures images fill the box without distortion */
   margin-bottom: 10px;
 }
+
 
 .resumename {
   color: #555;
