@@ -2,7 +2,7 @@
   <div class="projects"><br>
     <div>
       <h1>Latest Projects</h1>
-    </div><br><br>
+    </div><br>
     <div class="container">
       <div v-for="project in $store.state.projects" :key="project.id" class="card-body">
         <div class="image-container">
