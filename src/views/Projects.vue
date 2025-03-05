@@ -1,7 +1,7 @@
 <template>
   <div class="projects"><br>
     <div>
-      <h1>My Projects</h1>
+      <h1>Latest Projects</h1>
     </div><br><br>
     <div class="container">
       <div v-for="project in $store.state.projects" :key="project.id" class="card-body">
