@@ -10,9 +10,9 @@
     </div> -->
     <div class="text-container">
       <h1 class="fade-in slide-from-left" id="first-sentence">Hi, I'm <span class="highlight">Ammara  Hoosen</span></h1>
-      <h2 class="fade-in slide-from-right" id="second-sentence" style="animation-delay: 1.1s;">Aspiring <span class="highlight">Web & UI/UX Developer</span></h2>
+      <h2 class="fade-in slide-from-right" id="second-sentence" style="animation-delay: 1.1s;"> <span class="highlight">Web Developer</span> &  <span class="highlight">UI/UX Designer</span></h2>
     </div><br>
-    <a class="animated-btn animate_animated animate__zoomIn" target="_blank" href="https://drive.google.com/file/d/1ZX1fOiGnz7IEZ3BXMN0sDKJ62jsIfzqt/view?usp=sharing" download>Download CV</a>
+    <a class="animated-btn animate_animated animate__zoomIn" target="_blank" href="https://drive.google.com/file/d/1viv-U8ylUvKe_wClmNwY5iTy81zKIHnZ/view?usp=sharing" download>Download CV</a>
   </div>
 </template>
 
@@ -180,6 +180,70 @@ export default {
     .animated-btn:hover {
         transform: scale(1.1);
     }
+    /* For screens 320px and below */
+@media (max-width: 320px) {
+  #first-sentence {
+    font-size: 30px; /* Adjust font size for small screens */
+  }
+
+  #second-sentence {
+    font-size: 25px; /* Adjust font size for small screens */
+    margin-top: 15px;
+  }
+
+  .animated-btn {
+    font-size: 14px; /* Make the button text smaller */
+    padding: 8px 16px; /* Reduce padding */
+  }
+
+  .text-container {
+    padding: 10px; /* Add some padding for smaller devices */
+    transform: scale(1); /* Adjust scaling */
+  }
+}
+
+/* For screens 375px and below */
+@media (max-width: 375px) {
+  #first-sentence {
+    font-size: 40px; /* Adjust font size for medium small screens */
+  }
+
+  #second-sentence {
+    font-size: 35px; /* Adjust font size for medium small screens */
+    margin-top: 20px;
+  }
+
+  .animated-btn {
+    font-size: 15px; /* Slightly larger button text */
+    padding: 10px 18px; /* Adjust padding */
+  }
+
+  .text-container {
+    transform: scale(1.05); /* Scale adjustment */
+  }
+}
+
+/* For screens 425px and below */
+@media (max-width: 425px) {
+  #first-sentence {
+    font-size: 45px; /* Adjust font size for medium screens */
+  }
+
+  #second-sentence {
+    font-size: 40px; /* Adjust font size for medium screens */
+    margin-top: 25px;
+  }
+
+  .animated-btn {
+    font-size: 16px; /* Set button font size */
+    padding: 12px 20px; /* Adjust padding */
+  }
+
+  .text-container {
+    transform: scale(1.05); /* Scale adjustment */
+  }
+}
+
 </style>
 
 
