@@ -2,26 +2,21 @@
   <div class="projects"><br>
     <div>
       <h1>Latest Projects</h1>
-    </div><br>
+    </div><br><br>
     <div class="container">
       <div v-for="project in $store.state.projects" :key="project.id" class="card-body">
         <div class="image-container">
           <img :src="project.url" class="content-img" alt="projectcard">
-          <div class="project-icons">
-            <a :href="project.github" target="_blank" class="icon-link"><i class="bi bi-github"></i></a>
-            <a :href="project.netlify" target="_blank" class="icon-link"><i class="bi bi-arrow-up-right-square-fill"></i></a>
-          </div>
         </div>
         <div class="card-text">
           <h2 class="project-name">{{ project.name }}</h2>
           <p class="project-text">{{ project.description }}</p>
+          <a :href="project.netlify" target="_blank" class="view-button">View</a>
         </div>
       </div>
     </div>
-    <!-- <footers /> -->
   </div>
 </template>
-
 
 <script>
 import footers from "@/components/footer.vue";
@@ -61,140 +56,60 @@ h1 {
 }
 
 .card-text {
-  font-style: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   color: #555;
-}
-
-/* @import url("https://fonts.googleapis.com/css?family=Lora"); */
-/* @import url("https://fonts.googleapis.com/css?family=Lato"); */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0 auto 75px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ensures even columns on all screens */
+  gap: 20px;
+  justify-content: center;
   width: 85%;
+  margin: 0 auto;
 }
 
 .card-body {
   background-color: #ffffff;
   box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
-  font-family: Roboto Condensed;
-  margin: 25px 0;
-  height: 450px; /* Default height for cards */
+  font-family: "Roboto Condensed", sans-serif;
+  height: 400px;
   overflow: hidden;
-  width: 100%;
   border-radius: 8px;
-}
-.card-body:hover {
-  box-shadow: 0 8px 16px rgba(9, 9, 9, 0.527);
-  transform: scale(1.1); 
-  transition: box-shadow 0.3s ease, transform 0.3s ease; 
-}
-
-@media (min-width: 768px) {
-  .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .card-body {
-    margin: 25px 10px;
-    width: calc(50% - 20px); /* Adjust card width for smaller screens with a gap of 20px between cards */
-  }
-}
-
-@media (min-width: 1024px) {
-  .card-body {
-    margin: 25px 15px;
-    width: calc(30% - 30px); /* Adjust card width for larger screens with a gap of 30px between cards */
-  }
-}
-
-.content-img {
-  border-bottom: 4px solid #ffffff;
-  height: 200px;
-  overflow: hidden;
-}
-
-.card-body img {
-  height: auto;
-  object-position: center center;
-  width: 100%;
-}
-
-.card-body .card-text {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  min-height: 315px;
-}
-
-@media (min-width: 768px) {
-  .card-body .card-text {
-    padding-bottom: 25px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .card-body .card-text {
-    margin-top: 25px;
-    min-height: 250px;
-    padding-bottom: 0;
-  }
-}
-
-.project-icons {
-  display: flex;
-  margin-top: 20px;
-}
-
-.project-icons a {
-  margin-left: 20px;
-  font-size: 24px; 
-  color: rgb(123, 73, 151); 
+  justify-content: space-between;
 }
 
 .image-container {
-  position: relative;
+  width: 100%;
 }
 
 .content-img {
-  transition: filter 0.3s ease; 
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 4px solid #ffffff;
 }
 
-.card-body:hover .content-img {
-  filter: blur(2.5px); /* Apply blur effect on hover */
+.view-button {
+  margin-top: auto;
+  background-color: #7b4997;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
-.project-icons {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0; /* Initially hide the icons */
-  transition: opacity 0.3s ease; /* Add transition effect */
-}
-
-.card-body:hover .project-icons {
-  opacity: 1; /* Show the icons on hover */
-}
-.icon-link {
-  margin: 0 10px;
-  font-size: 24px; 
-  color: rgb(0, 0, 0); 
-}
-/* Media Query for Small Screens */
-@media (max-width: 768px) {
-  .card-body {
-    height: 350px; /* Adjust the height for small screens */
-  }
+.view-button:hover {
+  background-color: #5a3575;
 }
 
 @keyframes fadeInLeft {
@@ -207,5 +122,4 @@ h1 {
     transform: translateX(0);
   }
 }
-
 </style>
