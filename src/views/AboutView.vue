@@ -11,29 +11,8 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="box" style="animation: fadeInLeft 1s forwards;">
-                  <p>Hey there! I'm Ammara, aspiring frontend developer and UI/UX designer. <br> I'm all about grabbing opportunities as they come my way. Since forever, I've loved the blend of art and tech, where creativity meets innovation.
+                  <p>Hey there! I'm Ammara, a web developer and aspiring UI/UX designer. <br> I'm all about grabbing opportunities as they come my way. Since forever, I've loved the blend of art and tech, where creativity meets innovation.
                   Since childhood, I have found myself drawn to the mesmerizing worlds of art and technology, where creativity intertwines seamlessly with innovation. <br> It is this intersection that has guided me towards the exciting realms of Web Development and UI/UX design.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="box2">
-                  <ul>
-                    <li><strong>Date of Birth :</strong> October 21, 2004</li>
-                    <li><strong>Location : </strong> Athlone, Cape town</li>
-                    <li><strong>Hobbies : </strong></li>
-                    <ul>
-                      <li>Reading</li>
-                      <li>Kick-boxing</li>
-                      <li>Going on adventures</li>
-                      <li>Painting</li>
-                    </ul>
-                  </ul>
-                  <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/ammara-hoosen-364913288" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://github.com/Itsssammara" target="_blank"><i class="bi bi-github"></i></a>
-                  </div>
                 </div>
               </div>
             </div>
